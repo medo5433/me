@@ -8523,9 +8523,8 @@ data = {
 }
 LuaTele.sendText(5589635882,0,'*\n⤵️ مرحباً عزيزي المبرمج ميدو \nشخص ما يحتاج الي مساعده\n ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵ ○ᥫ᭡\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
-
 if text == 'يوسف' or text == 'ادوكس' then  
-local UserId_Info = LuaTele.searchPublicChat("G8AZAAL")
+local UserId_Info = LuaTele.searchPublicChat("PTPPE")
 if UserId_Info.id then
 local  ban = LuaTele.getUser(UserId_Info.id)
 local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -9438,6 +9437,20 @@ else
 return  LuaTele.sendText(msg_chat_id,msg_id,'*ᥫ᭡ لا توجد صوره ف حسابك*',"md",true) 
 end
 end
+end
+if text == "تفعيل شخصيه" or text == "تفعيل شخصيتي" then
+if not msg.Admin then
+send(msg_chat_id,msg_id,'\n* 𖥔 هذا الامر يخص  '..Controller_Num(7)..' * ',"md",true)  
+end
+Redis:del(NASA.."shakse"..msg_chat_id)
+send(msg_chat_id,msg_id,'\n* 𖥔 تم تفعيل امر شخصيتي * ',"md",true)  
+end
+if text == "تعطيل شخصيتي" or text == "تعطيل شخصيه" then
+if not msg.Admin then
+send(msg_chat_id,msg_id,'\n* 𖥔 هذا الامر يخص  '..Controller_Num(7)..' * ',"md",true)  
+end
+Redis:set(NASA.."shakse"..msg_chat_id,"off")
+send(msg_chat_id,msg_id,'\n* 𖥔 تم تعطيل امر شخصيتي * ',"md",true)  
 end
 if (text == 'شخصيتي' or text == 'حدد شخصيتي' or text == 'حددي شخصيتي') and not Redis:get(NASA.."shakse"..msg_chat_id) then
 local texting = {"عنيده", 
