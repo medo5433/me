@@ -6499,7 +6499,7 @@ data = {
 {{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}},
 }
 }
-bot.sendText(msg.chat_id,msg.id,'\n*𖥔 معلومات الجروب ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 الايدي -> '..msg.chat_id..' \n𖥔 عدد الاعضاء -> '..Info_Chats.member_count..'\n𖥔 عدد الادمنيه -> '..Info_Chats.administrator_count..'\n𖥔 عدد المطرودين -> '..Info_Chats.banned_count..'\n𖥔 عدد المقيدين -> '..Info_Chats.restricted_count..'\n𖥔 الرابط -> '..Info_Chats.invite_link.invite_link..'*',"md",true, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id,'\n*𖥔 معلومات الجروب ↑↓\n ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n𖥔 الايدي -> '..msg.chat_id..' \n𖥔 عدد الاعضاء -> '..Info_Chats.member_count..'\n𖥔 عدد الادمنيه -> '..Info_Chats.administrator_count..'\n𖥔 عدد المطرودين -> '..Info_Chats.banned_count..'\n𖥔 عدد المقيدين -> '..Info_Chats.restricted_count..'\n𖥔 الرابط -> '..Info_Chats.invite_link.invite_link..'*',"md",true, false, false, false, reply_markup)
 return false
 end
 
@@ -19526,7 +19526,7 @@ local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == '✴️ › نبذه عن السورس' then
-https://t.me/TGe_R/694"
+photo = "https://t.me/TGe_R/694"
 local Name = "*  *[ ⚠️› مرحبا بك في نبذا عن السورس](t.me/TGe_R)*\n\n*[ ⏏️› السورس حمايه 100%](t.me/TGe_R) *\n\n*[ 🎵› اذا السورس بيه أغاني](t.me/TGe_R)*\n\n*[ 🎶› يوجد لدينا تنصيب بوتات أغاني](t.me/TGe_R)*\n\n*[👾› السورس مزود بلالعاب](t.me/TGe_R) *\n\n*[ 🔰› يوجد عمل سورس زي هي](t.me/TGe_R) *\n\n*[ 🌍› يوجد سيرفرات جميع الانواع](t.me/TGe_R) *\n\nاااضغط للتواصل 🔃›\n*"
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -19834,7 +19834,7 @@ if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(NASA..'ch:admin')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n ᥫ᭡ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-LuaTele.sendText(msg_chat_id,msg_id,'* ᥫ᭡ عدد احصائيات البوت الكامله \n   ᥫ᭡○︵‿︵‿𝑇??𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n ᥫ᭡ عدد المجموعات : '..(Redis:scard(NASA..'ChekBotAdd') or 0)..'\n ᥫ᭡ عدد المشتركين : '..(Redis:scard(NASA..'Num:User:Pv') or 0)..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'* ᥫ᭡ عدد احصائيات البوت الكامله \n   ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n ᥫ᭡ عدد المجموعات : '..(Redis:scard(NASA..'ChekBotAdd') or 0)..'\n ᥫ᭡ عدد المشتركين : '..(Redis:scard(NASA..'Num:User:Pv') or 0)..'*',"md",true)  
 end
 if text == '📩 › اضف كليشه المطور' then
 if not msg.ControllerBot then 
