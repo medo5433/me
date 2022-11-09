@@ -8523,84 +8523,6 @@ data = {
 }
 LuaTele.sendText(5589635882,0,'*\n⤵️ مرحباً عزيزي المبرمج ميدو \nشخص ما يحتاج الي مساعده\n ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵ ○ᥫ᭡\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
- == 'ادوكس' then  
-local UserId_Info = LuaTele.searchPublicChat("PTPPE")
-if UserId_Info.id then
-local  ban = LuaTele.getUser(UserId_Info.id)
-local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
-if  bain.bio then
-Bio =  bain.bio
-else
-Bio = 'لا يوجد'
-end
-if ban.first_name then
-Creat = " "..ban.first_name.." "
-else
-Creat = " Developers Bot \n"
-end
-local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
-if photo.total_count > 0 then
-local TestText = "  ❲ َِ𝘴𝘰𝘶𝘳𝙘𝘦 𝙏ِ𝘪𝘎𝘦𝘳 ,❳\nᥫ᭡\n 🦇 *ժᥱ᥎ ꪀᥲ️ꪔᥱ* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n🦇  *ժᥱ᥎ ႦᎥ᥆* : [❲ "..Bio.." ❳]"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = 'ِ𝘢َِ𝘥َِ𝘰َِ𝘬َِ𝘴🧙‍♂️↺★  .', url = 't.me/PTPPE'}, 
-},
-}
-local msg_id = msg.id/2097152/0.5 
- https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-local TestText = "- معلومات المطور: \\nn: name Dev . [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = 'ِ𝘢َِ𝘥َِ𝘰َِ𝘬َِ𝘴🧙‍♂️↺★  .', url = 't.me/PTPPE'}, 
-},
-{
-{text = Creat, url = "https://t.me/"..ban.username..""},
-},
-}
-local msg_id = msg.id/2097152/0.5 
- https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-end
-
-if text == 'المبرمج يوصف' or text == 'يوصف' then  
-local UserId_Info = LuaTele.searchPublicChat("Z0HARY")
-if UserId_Info.id then
-local  ban = LuaTele.getUser(UserId_Info.id)
-local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
-if  bain.bio then
-Bio =  bain.bio
-else
-Bio = 'لا يوجد'
-end
-if ban.first_name then
-Creat = " "..ban.first_name.." "
-else
-Creat = " Developers Bot \n"
-end
-local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
-if photo.total_count > 0 then
-local TestText = "  ❲ َِ𝙯َِ𝘰َِ𝙃َِ𝘳َِ𝘠🦇 ,❳\nᥫ᭡\n 🦇 *ժᥱ᥎ ꪀᥲ️ꪔᥱ* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n🦇  *ժᥱ᥎ ႦᎥ᥆* : [❲ "..Bio.." ❳]"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = Creat, url = "https://t.me/"..ban.username..""},
-},
-}
-local msg_id = msg.id/2097152/0.5 
- https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-local TestText = "- معلومات المطور: \\nn: name Dev . [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
-keyboardd = {} 
-keyboardd.inline_keyboard = {
-{
-{text = Creat, url = "https://t.me/"..ban.username..""},
-},
-}
-local msg_id = msg.id/2097152/0.5 
- https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-end
 
 
 if text == 'المساعد' or text == 'مساعد' then   
@@ -11514,7 +11436,7 @@ local ratpep = ballancee + 6700
 Redis:set(NASA.."flos"..msg.sender_id.user_id , math.floor(ratpep))
 local ballancee = Redis:get(NASA.."flos"..msg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballancee)
-LuaTele.sendText(msg.chat_id,msg.id,"اشعار ايداع "..neews.."\nالمبلغ : 6700 جنيه ??\nوظيفتك : دكتور ولاده 👨\nنوع العملية : اضافة راتب\nرصيدك حاليا : "..convert_mony.." جنيه 💵","md",true)
+LuaTele.sendText(msg.chat_id,msg.id,"اشعار ايداع "..neews.."\nالمبلغ : 6700 جنيه 💵\nوظيفتك : دكتور ولاده 👨\nنوع العملية : اضافة راتب\nرصيدك حاليا : "..convert_mony.." جنيه 💵","md",true)
 Redis:setex(NASA.."iiioo" .. msg.sender_id.user_id,600, true)
 elseif Descriptioont == "38" then
 local ratpep = ballancee + 6600
@@ -16461,7 +16383,7 @@ local T =[[
 [•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
  [𝑀𝐸𝐷𝑜](t.me/U_Y_3_M)   
 [𝑌𝑂𝑈𝑆𝑆𝐸𝑓](t.me/Z0HARY) 
-[𝐴𝐷??𝐾𝑠](t.me/PTPPE)  
+[𝐴𝐷𝑂𝐾𝑠](t.me/PTPPE)  
 [𝑆𝑂𝑈𝑅𝐶𝑒 𝑇𝐼𝐺𝐸𝑟](t.me/TGe_R)  
 [•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
  [ٓٓٓ⁨ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀](t.me/TGe_R)
@@ -22136,7 +22058,7 @@ local UserId = Text:match('(%d+)/N17')
 if tonumber(IdUser) == tonumber(UserId) then
 local DCBAN = Redis:get(NASA..ChatId..IdUser.."zkrf:text")
 DCBAN = DCBAN:gsub('A','a') DCBAN = DCBAN:gsub('S','s') DCBAN = DCBAN:gsub('D','d') DCBAN = DCBAN:gsub('F','f') DCBAN = DCBAN:gsub('G','g') DCBAN = DCBAN:gsub('H','h') DCBAN = DCBAN:gsub('J','j') DCBAN = DCBAN:gsub('K','k') DCBAN = DCBAN:gsub('L','l') DCBAN = DCBAN:gsub('Q','q') DCBAN = DCBAN:gsub('W','w') DCBAN = DCBAN:gsub('E','e' ) DCBAN = DCBAN:gsub('R','r' ) DCBAN = DCBAN:gsub('T','t' ) DCBAN = DCBAN:gsub('Y','y' ) DCBAN = DCBAN:gsub('U','u' ) DCBAN = DCBAN:gsub('I','i' ) DCBAN = DCBAN:gsub('O','o' ) DCBAN = DCBAN:gsub('P','p' ) DCBAN = DCBAN:gsub('Z','z' ) DCBAN = DCBAN:gsub('X','x' ) DCBAN = DCBAN:gsub('C','c' ) DCBAN = DCBAN:gsub('V','v' ) DCBAN = DCBAN:gsub('B','b' ) DCBAN = DCBAN:gsub('N','n' ) DCBAN = DCBAN:gsub('M','m')
-local Q_bna17 = DCBAN:gsub('a','🄰' ) Q_bna17 = Q_bna17:gsub('b','🄱' ) Q_bna17 = Q_bna17:gsub('c','🄲' ) Q_bna17 = Q_bna17:gsub('d','🄳' ) Q_bna17 = Q_bna17:gsub('e','🄴' ) Q_bna17 = Q_bna17:gsub('f','🄵' ) Q_bna17 = Q_bna17:gsub('g','🄶' ) Q_bna17 = Q_bna17:gsub('h','🄷' ) Q_bna17 = Q_bna17:gsub('i','🄸' ) Q_bna17 = Q_bna17:gsub('j','🄹' ) Q_bna17 = Q_bna17:gsub('k','🄺' ) Q_bna17 = Q_bna17:gsub('l','🄻' ) Q_bna17 = Q_bna17:gsub('m','🄼' ) Q_bna17 = Q_bna17:gsub('n','🄽' ) Q_bna17 = Q_bna17:gsub('o','🄾' ) Q_bna17 = Q_bna17:gsub('p','🄿' ) Q_bna17 = Q_bna17:gsub('q','🅀' ) Q_bna17 = Q_bna17:gsub('r','🅁' ) Q_bna17 = Q_bna17:gsub('s','🅂' ) Q_bna17 = Q_bna17:gsub('t','🅃' ) Q_bna17 = Q_bna17:gsub('u','🅄' ) Q_bna17 = Q_bna17:gsub('v','🅅' ) Q_bna17 = Q_bna17:gsub('w','🅆' ) Q_bna17 = Q_bna17:gsub('x','🅇' ) Q_bna17 = Q_bna17:gsub('y','🅈' ) Q_bna17 = Q_bna17:gsub('z','🅉')
+local Q_bna17 = DCBAN:gsub('a','🄰' ) Q_bna17 = Q_bna17:gsub('b','🄱' ) Q_bna17 = Q_bna17:gsub('c','🄲' ) Q_bna17 = Q_bna17:gsub('d','🄳' ) Q_bna17 = Q_bna17:gsub('e','🄴' ) Q_bna17 = Q_bna17:gsub('f','🄵' ) Q_bna17 = Q_bna17:gsub('g','🄶' ) Q_bna17 = Q_bna17:gsub('h','🄷' ) Q_bna17 = Q_bna17:gsub('i','🄸' ) Q_bna17 = Q_bna17:gsub('j','🄹' ) Q_bna17 = Q_bna17:gsub('k','🄺' ) Q_bna17 = Q_bna17:gsub('l','🄻' ) Q_bna17 = Q_bna17:gsub('m','🄼' ) Q_bna17 = Q_bna17:gsub('n','🄽' ) Q_bna17 = Q_bna17:gsub('o','🄾' ) Q_bna17 = Q_bna17:gsub('p','??' ) Q_bna17 = Q_bna17:gsub('q','🅀' ) Q_bna17 = Q_bna17:gsub('r','🅁' ) Q_bna17 = Q_bna17:gsub('s','🅂' ) Q_bna17 = Q_bna17:gsub('t','🅃' ) Q_bna17 = Q_bna17:gsub('u','🅄' ) Q_bna17 = Q_bna17:gsub('v','🅅' ) Q_bna17 = Q_bna17:gsub('w','🅆' ) Q_bna17 = Q_bna17:gsub('x','🅇' ) Q_bna17 = Q_bna17:gsub('y','🅈' ) Q_bna17 = Q_bna17:gsub('z','🅉')
 LuaTele.editMessageText(ChatId, Msg_id, "ᥫ᭡ لـقـد اخـترت   \n▷ `"..Q_bna17.."`", "md",false)
 end
 end
