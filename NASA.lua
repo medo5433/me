@@ -8719,6 +8719,15 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendvideo?chat_id=' .. msg_chat_id .. '&video=https://t.me/apqiy/118&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == "تطقيم حب ♥️🎆" then 
+Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
+if not msg.Asasy then
+Abs = math.random(2,58); 
+local Text ='*🎆┊افتـارات تطـقيم حـب تمبلـرࢪ ➧??♥️◟*'
+local MsgId = msg.id/2097152/0.5
+local MSGID = string.gsub(MsgId,'.0','')
+https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/tatkkkkkimh/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+end
 if text == "لو خيروك بالصوره"  then 
 ban = math.random(1,42); 
 local Text ='لاختيار لو خيروك اخري اتك ع زر بالاسفل' 
@@ -16451,7 +16460,7 @@ video = "https://t.me/TGe_R/692"
 local T =[[
 [•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
  [𝑀𝐸𝐷𝑜](t.me/U_Y_3_M)   
-[𝑌𝑂𝑈𝑆𝑆𝐸𝑓](t.me/Z0HARY) 
+[𝑌𝑂𝑈𝑆𝑆??𝑓](t.me/Z0HARY) 
 [𝐴𝐷𝑂𝐾𝑠](t.me/PTPPE)  
 [𝑆𝑂𝑈𝑅𝐶𝑒 𝑇𝐼𝐺𝐸𝑟](t.me/TGe_R)  
 [•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
@@ -19130,249 +19139,6 @@ end
 
 end -- GroupBot
 if chat_type(msg.chat_id) == "UserBot" then 
-if text == '/tiger' then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
-data = {
-{
-{text = 'لتنصيب بوت 🦋💙',type = 'text'},
-},
-{
-{text = 'انمي ولاد 👨‍🎤💞',type = 'text'},{text = 'انمي بنات 👩‍🎤💞',type = 'text'},
-},
-{
-{text = 'افتار ولاد 🙍😈',type = 'text'},{text = 'افتار بنات 🙋🏻‍♀🌁',type = 'text'},
-},
-{
-{text = 'ꔹ━━━━━ꔹ𓂄𓆩𝚃𝙸𝙶𝙴𝚁𓆪𓂁ꔹ ━━━━━ꔹ',type = 'text'},
-},
-{
-{text = ' رمادي ولاد 🧝🏻🏙',type = 'text'},{text = 'رمادي بنات 🧝🏻‍♀🏙', type = 'text'},
-},
-{
-{text = 'تطقيم حب ♥️🎆',type = 'text'},{text = 'بيست بنات 👯‍♀🎆',type = 'text'},
-},
-{
-{text = 'فديو انمي🎬',type = 'text'},{text = 'حالات واتس 🎬',type = 'text'},
-},
-{
-{text = 'ꔹ━━━━━ꔹ𓂄𓆩𝚃𝙸𝙶𝙴𝚁𓆪𓂁ꔹ ━━━━━ꔹ',type = 'text'},
-},
-{
-{text = 'قناة السورس 😈🤪',type = 'text'},
-},
-{
-{text = 'ريمكسات اغـاني 🎵',type = 'text'},{text = 'بصمـات ميمـز 🦹🏻‍♂', type = 'text'},
-},
-{
-{text = 'اشعـار صوتيـة 🎙',type = 'text'},{text = 'اغاني🎶', type = 'text'},
-},
-{
-{text = 'ꔹ━━━━━ꔹ𓂄𓆩𝚃𝙸𝙶𝙴𝚁𓆪𓂁ꔹ ━━━━━ꔹ',type = 'text'},
-},
-{
-{text = 'متحـركـات 🎆',type = 'text'},{text = 'صـور 🎇', type = 'text'},
-},
-{
-{text = 'سورس 😎💞',type = 'text'},
-},
-}
-}
-return bot.sendText(msg_chat_id,msg_id,'* ⦁ اهلا بك عزيزي .. في كيبورد الاعضاء *', 'md', false, false, false, false, reply_markup)
-end
-end
-if text == "اغاني🎶" then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,140); 
-local Text ='*𖥔┊تم اختيار المقطع الصوتي لك*'
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '𖥔 مطـور البـوت 𖥔', url = 't.me/'..UserSudo}}} 
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
-if text == "حالات واتس 🎬" then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(296,400); 
-local Text ='*🎆┊حـالات واتـس قصيـرة ➧🧸♥️*'
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '𖥔 مطـور البـوت 𖥔', url = 't.me/'..UserSudo}}} 
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendVideo?chat_id=' .. msg.chat_id .. '&video=https://t.me/RSHDO5/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
-if text == "فديو انمي🎬" then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(6,641); 
-local Text ='*🎆┊ستـوريات آنمـي قصيـرة ➧ 🖤🧧*'
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '𖥔 مطـور البـوت 𖥔', url = 't.me/'..UserSudo}}} 
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendVideo?chat_id=' .. msg.chat_id .. '&video=https://t.me/AA_Zll/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
-if text == "بصمـات ميمـز 🦹🏻‍♂" then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-NASAy = math.random(2,1201); 
-local zzzzl1l = '*𖥔┊اضغط الـزر لتغييـر مقطـع الميمـز*'
-data = {} 
-data.inline_keyboard = {
-{
-{text = 'ميمـز آخـر 🎙', callback_data= msg.sender_id.user_id..'/memz'}, 
-},
-}
-local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendVoice?chat_id=" .. msg.chat_id .. "&voice=https://t.me/MemzDavid/"..NASAy.."&caption=" .. URL.escape(zzzzl1l).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(data))
-end
-end
-if text == "عـروض الافـلام 🎞" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,82); 
-local Text ='*𖥔┊تم اختيار الفلم لك*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/NASAMoves/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "انمي بنات 👩‍🎤💞" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(3,825); 
-local Text ='*🎆┊افتـارات آنمـي بنـات ➧🧚🏻‍♀◟*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/shhdhn/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "انمي ولاد 👨‍🎤💞" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(3,556); 
-local Text ='*🎆┊افتـارات آنمـي ولـد ➧🙇🏻◟*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/dnndxn/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "صـور 🎇" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(4,1171); 
-local Text ='*𖥔┊تم اختيار الافتـار لك*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/PhotosDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "معلومات عامة 🧩" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(3,270); 
-local Text ='*𖥔┊صـورة ومعلومـة 🛤💡*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/A_l3l/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "افتار بنات 🙋🏻‍♀🌁" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,63); 
-local Text ='*🎆┊افتـارات بنـات تمبلـرࢪ ➧🧚🏻‍♀◟*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/banaaaat1/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "افتار ولاد 🙍😈" or text == "رمادي ولاد 🧝🏻🏙" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,131); 
-local Text ='*🎆┊افتـارات ولـد ࢪمـاديه ➧🙇🏻🖤◟*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/shababbbbR/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "رمادي بنات 🧝🏻‍♀🏙" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,131); 
-local Text ='*🎆┊افتـارات بنـات ࢪمـاديه ➧🙇🏻‍♀🖤◟*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/banatttR/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "بيست بنات 👯‍♀🎆" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,30); 
-local Text ='*🎆┊افتـارات بيست تطقيـم بنـات ➧🧚🏻‍♀🧚🏻‍♀◟*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/Tatkkkkkim/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "تطقيم حب ♥️🎆" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,58); 
-local Text ='*🎆┊افتـارات تطـقيم حـب تمبلـرࢪ ➧??♥️◟*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/tatkkkkkimh/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "متحـركـات 🎆" then 
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,1075); 
-local Text ='*𖥔┊تم اختيار متحركه لك*'
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
-end
-end
-if text == "ريمكسات اغـاني 🎵" then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(2,612); 
-local Text ='*𖥔┊تم اختيار المقطع ريماكس لك 💞🎶*'
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '𖥔 مطـور البـوت 𖥔', url = 't.me/'..UserSudo}}} 
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
-if text == "رقيـة شرعيـة 🕋" then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(5,121); 
-local Text ='*𖥔┊تم اختيار مقطـع الرقيـة الشـرعيـة 🕋🤍*'
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '𖥔 مطـور البـوت 𖥔', url = 't.me/'..UserSudo}}} 
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/Rqy_1/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
-if text == "اشعـار صوتيـة 🎙" then
-Redis:sadd(NASA..'NASA:Num:User:Pv',msg.sender_id.user_id)
-if not msg.Asasy then
-Abs = math.random(7,592); 
-local Text ='*𖥔┊تم اختيار المقطع شعر لك*'
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '𖥔 مطـور البـوت 𖥔', url = 't.me/'..UserSudo}}} 
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-end
 if text == 'تحديث الملفات' or text == 'تحديث' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*ᥫ᭡ هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
@@ -22339,7 +22105,7 @@ local UserId = Text:match('(%d+)/N14')
 if tonumber(IdUser) == tonumber(UserId) then
 local DCBAN = Redis:get(NASA..ChatId..IdUser.."zkrf:text")
 DCBAN = DCBAN:gsub('A','a') DCBAN = DCBAN:gsub('S','s') DCBAN = DCBAN:gsub('D','d') DCBAN = DCBAN:gsub('F','f') DCBAN = DCBAN:gsub('G','g') DCBAN = DCBAN:gsub('H','h') DCBAN = DCBAN:gsub('J','j') DCBAN = DCBAN:gsub('K','k') DCBAN = DCBAN:gsub('L','l') DCBAN = DCBAN:gsub('Q','q') DCBAN = DCBAN:gsub('W','w') DCBAN = DCBAN:gsub('E','e' ) DCBAN = DCBAN:gsub('R','r' ) DCBAN = DCBAN:gsub('T','t' ) DCBAN = DCBAN:gsub('Y','y' ) DCBAN = DCBAN:gsub('U','u' ) DCBAN = DCBAN:gsub('I','i' ) DCBAN = DCBAN:gsub('O','o' ) DCBAN = DCBAN:gsub('P','p' ) DCBAN = DCBAN:gsub('Z','z' ) DCBAN = DCBAN:gsub('X','x' ) DCBAN = DCBAN:gsub('C','c' ) DCBAN = DCBAN:gsub('V','v' ) DCBAN = DCBAN:gsub('B','b' ) DCBAN = DCBAN:gsub('N','n' ) DCBAN = DCBAN:gsub('M','m')
-local Q_bna14 = DCBAN:gsub('a','𝙰' ) Q_bna14 = Q_bna14:gsub('b','𝙱' ) Q_bna14 = Q_bna14:gsub('c','𝙲' ) Q_bna14 = Q_bna14:gsub('d','𝙳' ) Q_bna14 = Q_bna14:gsub('e','𝙴' ) Q_bna14 = Q_bna14:gsub('f','𝙵' ) Q_bna14 = Q_bna14:gsub('g','𝙶' ) Q_bna14 = Q_bna14:gsub('h','𝙷' ) Q_bna14 = Q_bna14:gsub('i','𝙸' ) Q_bna14 = Q_bna14:gsub('j','𝙹' ) Q_bna14 = Q_bna14:gsub('k','𝙺' ) Q_bna14 = Q_bna14:gsub('l','𝙻' ) Q_bna14 = Q_bna14:gsub('m','??' ) Q_bna14 = Q_bna14:gsub('n','𝙽' ) Q_bna14 = Q_bna14:gsub('o','𝙾' ) Q_bna14 = Q_bna14:gsub('p','𝙿' ) Q_bna14 = Q_bna14:gsub('q','𝚀' ) Q_bna14 = Q_bna14:gsub('r','𝚁' ) Q_bna14 = Q_bna14:gsub('s','𝚂' ) Q_bna14 = Q_bna14:gsub('t','𝚃' ) Q_bna14 = Q_bna14:gsub('u','𝙺' ) Q_bna14 = Q_bna14:gsub('v','𝚅' ) Q_bna14 = Q_bna14:gsub('w','𝚆' ) Q_bna14 = Q_bna14:gsub('x','𝚇' ) Q_bna14 = Q_bna14:gsub('y','𝚈' ) Q_bna14 = Q_bna14:gsub('z','𝚉')
+local Q_bna14 = DCBAN:gsub('a','𝙰' ) Q_bna14 = Q_bna14:gsub('b','𝙱' ) Q_bna14 = Q_bna14:gsub('c','𝙲' ) Q_bna14 = Q_bna14:gsub('d','𝙳' ) Q_bna14 = Q_bna14:gsub('e','𝙴' ) Q_bna14 = Q_bna14:gsub('f','𝙵' ) Q_bna14 = Q_bna14:gsub('g','𝙶' ) Q_bna14 = Q_bna14:gsub('h','𝙷' ) Q_bna14 = Q_bna14:gsub('i','𝙸' ) Q_bna14 = Q_bna14:gsub('j','𝙹' ) Q_bna14 = Q_bna14:gsub('k','𝙺' ) Q_bna14 = Q_bna14:gsub('l','𝙻' ) Q_bna14 = Q_bna14:gsub('m','𝙼' ) Q_bna14 = Q_bna14:gsub('n','𝙽' ) Q_bna14 = Q_bna14:gsub('o','𝙾' ) Q_bna14 = Q_bna14:gsub('p','𝙿' ) Q_bna14 = Q_bna14:gsub('q','𝚀' ) Q_bna14 = Q_bna14:gsub('r','𝚁' ) Q_bna14 = Q_bna14:gsub('s','𝚂' ) Q_bna14 = Q_bna14:gsub('t','𝚃' ) Q_bna14 = Q_bna14:gsub('u','𝙺' ) Q_bna14 = Q_bna14:gsub('v','𝚅' ) Q_bna14 = Q_bna14:gsub('w','𝚆' ) Q_bna14 = Q_bna14:gsub('x','𝚇' ) Q_bna14 = Q_bna14:gsub('y','𝚈' ) Q_bna14 = Q_bna14:gsub('z','𝚉')
 LuaTele.editMessageText(ChatId, Msg_id, "ᥫ᭡ لـقـد اخـترت   \n▷ `"..Q_bna14.."`", "md",false)
 end
 end
