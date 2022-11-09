@@ -16397,9 +16397,6 @@ keyboard.inline_keyboard = {
 {
 {text = 'َِ𝘥َِ𝘦َِ𝙑 َِ𝘮َِ𝘦َِ??َِ𝘰🍇', url = "https://t.me/U_Y_3_M"}
 },
-{
-{text = 'مطور البوت ⚠️', url = "https://t.me/"..bb.username..""},
-},
 { 
 {text = '- اضف البوت لمجموعتك ♡,', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
@@ -19524,7 +19521,7 @@ end
 end
 if text == '📊 › السورس' then
 photo = "https://t.me/apqiy/249"
-local Name = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُNُAُSٍُA\n┄──━━━ ᥫ᭡ ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُNُAُSٍُA](http://t.me/TGe_R)*\n\n*👤 › [BُAُNُDُA](http://t.me/U_Y_3_M)*\n\n*📡 › [TُWُSٍُOُL ُNُAُSٍُA](http://t.me/U_00l)*\n┄──━━━ ᥫ᭡ ━━━──┄*"
+local Name = "*ᴡᴇʟᴄᴏᴍᵉ ᴛᵒ sᴏᴜʀᴄᵉ ᴛᴀɪɢᴇʳ  \n┄──━━━ ᥫ᭡ ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُNُAُSٍُA](http://t.me/TGe_R)*\n\n*👤 › [BُAُNُDُA](http://t.me/U_Y_3_M)*\n\n*📡 › [TُWُSٍُOُL ُNُAُSٍُA](http://t.me/U_00l)*\n┄──━━━ ᥫ᭡ ━━━──┄*"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -20841,7 +20838,7 @@ local ph = photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id
 pph ={
 type = "photo",
 media = ph,
-caption = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُNُAُSٍُA*",
+caption = "*ᴡᴇʟᴄᴏᴍᵉ ᴛᵒ sᴏᴜʀᴄᵉ ᴛᴀɪɢᴇʳ  *",
 parse_mode = "Markdown"                                                                                                                                                               
 }     
 keyboard = {} 
