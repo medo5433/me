@@ -281,7 +281,7 @@ Status = 'المبرمج ميدو'
 elseif tonumber(UserId) == 5634805056 then
 Status = 'مبرمج السورس'
 elseif tonumber(UserId) == 5552799584 then
-Status = 'ا44'
+Status = 'مبرمج السورس'
 elseif tonumber(UserId) == 2178 then
 Status = 'no NEM'
 elseif tonumber(UserId) == 2112 then
@@ -1138,7 +1138,7 @@ elseif tonumber(msg.sender_id.user_id) == 2178 then
 msg.Name_Controller = 'no NEM '
 msg.The_Controller = 1
 elseif tonumber(msg.sender_id.user_id) == 5552799584 then
-msg.Name_Controller = 'vcvv '
+msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender_id.user_id) == true then  
 msg.The_Controller = 1
@@ -3761,7 +3761,7 @@ data = {
 LuaTele.sendText(Sudo_Id,0,'*\n⌛️› تم تفعيل مجموعه جديده : \n💰› من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*} \n⚙› معلومات المجموعه :\n🔘› عدد الاعضاء : '..Info_Chats.member_count..'\n🔅› عدد الادمنيه : '..Info_Chats.administrator_count..'\n🚷› عدد المطرودين : '..Info_Chats.banned_count..'\n🔕› عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
 Redis:sadd(NASA.."ChekBotAdd",msg_chat_id)
 Redis:set(NASA.."Status:Id"..msg_chat_id,true) ;Redis:set(NASA.."Status:Reply"..msg_chat_id,true) ;Redis:set(NASA.."Status:ReplySudo"..msg_chat_id,true) ;Redis:set(NASA.."Status:BanId"..msg_chat_id,true) ;Redis:set(NASA.."Status:Games"..msg_chat_id,true) ;Redis:set(NASA.."Status:SetId"..msg_chat_id,true) 
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🔰› المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n⏏️› تم تفعيل المجموعه \n⚡ › تم ترقيه - ('..y..') ادمنيه\n🔰 › وتم تفعيل الحمايه بنجاح *','md',true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🔰› المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n⏏️› تم تفعيل المجموعه \n › تم ترقيه - ('..y..') ادمنيه\n🔰 › وتم تفعيل الحمايه بنجاح *','md',true)  
 end
 end
 end 
@@ -3831,7 +3831,7 @@ data = {
 Redis:sadd(NASA.."ChekBotAdd",msg_chat_id)
 Redis:set(NASA.."Status:Id"..msg_chat_id,true);Redis:set(NASA.."Status:Games"..msg_chat_id,true)  ;Redis:set(NASA.."Status:Reply"..msg_chat_id,true) ;Redis:set(NASA.."Status:ReplySudo"..msg_chat_id,true) ;Redis:set(NASA.."Status:BanId"..msg_chat_id,true) ;Redis:set(NASA.."Status:SetId"..msg_chat_id,true) 
 LuaTele.sendText(Sudo_Id,0,'*\n⌛️› تم تفعيل مجموعه جديده : \n💰› من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*} \n⚙› معلومات المجموعه :\n🦠› عدد الاعضاء : '..Info_Chats.member_count..'\n🔅› عدد الادمنيه : '..Info_Chats.administrator_count..'\n🚷› عدد المطرودين : '..Info_Chats.banned_count..'\n🔕› عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*🔰› المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n⏏️› تم تفعيل المجموعه \n⚡ › تم ترقيه - ('..y..') ادمنيه\n🔰 › وتم تفعيل الحمايه بنجاح *','md',true)  
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*🔰› المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n⏏️› تم تفعيل المجموعه \n › تم ترقيه - ('..y..') ادمنيه\n🔰 › وتم تفعيل الحمايه بنجاح *','md',true)  
 end
 end
 end
@@ -3924,9 +3924,9 @@ end
 end
 Redis:sadd(NASA.."ChekBotAdd",msg_chat_id)
 Redis:set(NASA.."Status:Id"..msg_chat_id,true);Redis:set(NASA.."Status:Games"..msg_chat_id,true)  ;Redis:set(NASA.."Status:Reply"..msg_chat_id,true) ;Redis:set(NASA.."Status:ReplySudo"..msg_chat_id,true) ;Redis:set(NASA.."Status:BanId"..msg_chat_id,true) ;Redis:set(NASA.."Status:SetId"..msg_chat_id,true) 
-LuaTele.sendText(msg_chat_id,msg_id,'\n*🔰› المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n⏏️› تم تفعيل المجموعه \n⚡ › تم ترقيه - ('..y..') ادمنيه\n🔰 › وتم تفعيل الحمايه بنجاح *','md',true)  
+LuaTele.sendText(msg_chat_id,msg_id,'\n*🔰› المجموعه : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n⏏️› تم تفعيل المجموعه \n › تم ترقيه - ('..y..') ادمنيه\n🔰 › وتم تفعيل الحمايه بنجاح *','md',true)  
 local list = Redis:smembers(NASA.."ChekBotAdd")
-return LuaTele.sendText(Sudo_Id,0,"*⌛️› تم تفعيل مجموعه جديده  *\n🛃 ›  تم تفعيل جروب تلقائيا عن طريق البوت\n⚡ › اصبح عدد جروباتك *"..#list.."* مجموعه","md",true)
+return LuaTele.sendText(Sudo_Id,0,"*⌛️› تم تفعيل مجموعه جديده  *\n🛃 ›  تم تفعيل جروب تلقائيا عن طريق البوت\n › اصبح عدد جروباتك *"..#list.."* مجموعه","md",true)
 end
 if chat_type(msg.chat_id) == "GroupBot" and  Redis:sismember(NASA.."ChekBotAdd",msg_chat_id) then
 --------------------------------------------------------------------------------------------------------------
@@ -6488,6 +6488,19 @@ return LuaTele.sendText(msg.chat_id,msg.id,'*\n ᥫ᭡ عليك الاشتراك
 end
 Redis:set(NASA.."Status:Id"..msg_chat_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id," ᥫ᭡ تم تفعيل الايدي ","md",true)
+end
+
+if text == 'الجروب' or text == 'البار' or text == 'عدد الجروب' or text == 'عدد البار' then
+Get_Chat = bot.getChat(msg.chat_id)
+Info_Chats = bot.getSupergroupFullInfo(msg.chat_id)
+local reply_markup = bot.replyMarkup{
+type = 'inline',
+data = {
+{{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}},
+}
+}
+bot.sendText(msg.chat_id,msg.id,'\n*𖥔 معلومات الجروب ↑↓\n━━━───⊶⛧•𝙆𝙄ٍَ𝙉ٍ𝙂•⛧⊷───━━━\n𖥔 الايدي -> '..msg.chat_id..' \n𖥔 عدد الاعضاء -> '..Info_Chats.member_count..'\n𖥔 عدد الادمنيه -> '..Info_Chats.administrator_count..'\n𖥔 عدد المطرودين -> '..Info_Chats.banned_count..'\n𖥔 عدد المقيدين -> '..Info_Chats.restricted_count..'\n𖥔 الرابط -> '..Info_Chats.invite_link.invite_link..'*',"md",true, false, false, false, reply_markup)
+return false
 end
 
 if TextMsg == 'ردود السورس' then
@@ -14194,7 +14207,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -16304,7 +16317,7 @@ Text =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'Delete Telegram',url="https://my.telegram.org/auth?to=delete"},{text = 'Delete Bot ',url="https://t.me/LC6BOT"}},
-{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete Snapchat',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},{{text= '˹??𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .⚡',url="https://t.me/TGe_R"}}
+{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete Snapchat',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},{{text= '˹??𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .',url="https://t.me/TGe_R"}}
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/NNAON/474&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -16401,7 +16414,7 @@ local Name = "᭙ᥱᥣᥴ᥆ꪔᥱ ꪔᥲ️ᖇkᥱƚ ƚᎥᘜᥱᖇ\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/Qrao_bot?start'}
+{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/Qrao54_bot?start'}
 },
 {
 {text = 'اضف البوت الي مجموعتك✅', url = 't.me/'..UserBot..'?startgroup=new'}
@@ -16433,7 +16446,7 @@ data = {
 {text = 'القفل🔐', data = msg.sender_id.user_id..'/NoNextSeting'}, {text = 'التفعيل🛡️', data = msg.sender_id.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -16461,7 +16474,7 @@ data = {
 {text = 'العاب متطورة 🥏', data = msg.sender_id.user_id..'/degm'},{text = 'لعبه البنك 💸', data = msg.sender_id.user_id..'/0988ban'}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -18962,7 +18975,7 @@ data = {
 {text = '0', data = msg.sender_id.user_id..'calc&0'},{text = '.', data = msg.sender_id.user_id..'calc&.'},{text = '+', data = msg.sender_id.user_id..'calc&+'},{text = '=', data = msg.sender_id.user_id..'equal'},
 },
 {
-{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 ??𝙖𝙎𝙖 .⚡', url = 'https://t.me/TGe_R'},
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 .', url = 'https://t.me/TGe_R'},
 },
 }
 }
@@ -19080,7 +19093,7 @@ local CmdStart = '*\n🎤› أهلآ بك عزيزي أنا بوت '..(Redis:ge
 '\n⚙️› وظيفتي حماية المجموعات'..
 '\n✅› لتفعيل البوت عليك اتباع مايلي ...'..
 '\n🔘› أضِف البوت إلى مجموعتك'..
-'\n⚡️› ارفعهُ » مشرف'..
+'\n️› ارفعهُ » مشرف'..
 '\n🎧› إضغط -» (/MUSIC) الاغاني'..
 '\n⬆️› سيتم ترقيتك مالك في البوت \n*'
 if photo.total_count > 0 then
@@ -19104,7 +19117,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -19271,10 +19284,7 @@ data = {
 {text ='📊 › الاحصائيات',type ='text'},
 },
 {
-{text ='⛄ › المساعد',type ='text'},{text ='👤 › المطور',type ='text'},
-},
-{
-{text ='🚸 › مطورين السورس',type ='text'},
+{text ='👤 › المطور',type ='text'},
 },
 {
 {text ='👥 › تغيير المطور الاساسي',type ='text'} 
@@ -19456,31 +19466,6 @@ Redis:set(NASA.."Status:photo",true)
 Redis:set(NASA.."Status:IdPhoto",true) 
 return LuaTele.sendText(msg_chat_id,msg_id," ᥫ᭡ تم تفعيل منع الصور ","md",true)
 end
-if text == '⛄ › المساعد' or text == 'مساعد' then   
-local id = Redis:get(NASA.."id:HELPBEVQ:Groups")
-local url = https.request('http://api.telegram.org/bot'..Token..'/getchat?chat_id='..id)
-local banyt = JSON.decode(url)
-local name = ' '..banyt.result.first_name..' '
-if banyt.result.username then
-apapiy = ' '..banyt.result.username..' '
-else
-apapiy = 'TGe_R'
-end
-if banyt.result.first_name then
-klajq = ' '..banyt.result.first_name..' '
-else
-klajq = 'لا يوجد'
-end
-local abnj = "**["..name.." ](t.me/"..banyt.result.username..")*\n*"
-keybanyt = {} 
-keybanyt.inline_keyboard = {
-{
-{text = name, url = "https://t.me/"..banyt.result.username..""},
-},
-}
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg.chat_id.."&reply_to_message_id="..msg_id.."&photo=t.me/"..banyt.result.username.."&caption="..URL.escape(abnj).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keybanyt))
-end
 if text == '👤 › المطور' or text == 'مطور البوت' then   
 local  ban = LuaTele.getUser(Sudo_Id) 
 local  bain = LuaTele.getUserFullInfo(Sudo_Id)
@@ -19512,16 +19497,33 @@ local msg_id = msg.id/2097152/0.5
 end
 end
 if text == '📊 › السورس' then
-https://t.me/TGe_R/694"
-local Name = "*᭙ᥱᥣᥴ᥆ꪔᥱ ƚᎥᘜᥱᖇ\n┄──━━━  ᥫ᭡ ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُNُAُSٍُA](http://t.me/TGe_R)*\n\n*👤 › [BُAُNُDُA](http://t.me/U_Y_3_M)*\n\n*📡 › [TُWُSٍُOُL ُNُAُSٍُA](http://t.me/TGe_R)*\n┄──━━━  ᥫ᭡ ━━━──┄*"
+video = "https://t.me/TGe_R/692"
+local T =[[
+[•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
+[𝑀𝐸𝐷𝑜](t.me/U_Y_3_M)   
+[𝑌𝑂𝑈𝑆𝑆𝐸𝑓](t.me/Z0HARY) 
+[𝐴𝐷𝑂𝐾𝑠](t.me/PTPPE)  
+[𝑆𝑂𝑈𝑅𝐶𝑒 𝑇𝐼𝐺𝐸𝑟](t.me/TGe_R)  
+[•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
+ [ٓٓٓ⁨ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀](t.me/TGe_R)
+]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'اضف البوت الي مجموعتك✅', url = 't.me/'..UserBot..'?startgroup=new'}
+{text = '-𝑆𝑂𝑈𝑅𝐶𝑒 𝑇𝐼𝐺𝐸𝑟  ', url = "https://t.me/TGe_R"} 
+},
+{
+{text = 'َِ𝙯َِ𝘰َِ𝙃َِ𝘳َِ𝘠🦇', url = "https://t.me/Z0HARY"},{text = 'َِ𝘢َِ𝘥َِ𝘰َِ𝘬َِ𝘴🧙‍♂️', url = "https://t.me/PTPPE"} 
+},
+{
+{text = 'َِ𝘥َِ𝘦َِ𝙑 َِ𝘮َِ𝘦َِ??َِ𝘰🍇', url = "https://t.me/U_Y_3_M"}
+},
+{ 
+{text = '- اضف البوت لمجموعتك ♡,', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 }
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&photo="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video="..video.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == '✴️ › نبذه عن السورس' then
 https://t.me/TGe_R/694"
@@ -19541,7 +19543,7 @@ local Name = "᭙ᥱᥣᥴ᥆ꪔᥱ ꪔᥲ️ᖇkᥱƚ ƚᎥᘜᥱᖇ\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/Qrao_bot?start'}
+{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/Qrao54_bot?start'}
 },
 {
 {text = 'اضف البوت الي مجموعتك✅', url = 't.me/'..UserBot..'?startgroup=new'}
@@ -19565,7 +19567,7 @@ data = {
 {text = 'القفل🔐', data = msg.sender_id.user_id..'/NoNextSeting'}, {text = 'التفعيل🛡️', data = msg.sender_id.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -19586,7 +19588,7 @@ data = {
 {text = 'العاب متطورة 🥏', data = msg.sender_id.user_id..'/degm'},{text = 'لعبه البنك 💸', data = msg.sender_id.user_id..'/0988ban'}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -19832,7 +19834,7 @@ if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(NASA..'ch:admin')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n ᥫ᭡ عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
 end
-LuaTele.sendText(msg_chat_id,msg_id,'* ᥫ᭡ عدد احصائيات البوت الكامله \n   ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n ᥫ᭡ عدد المجموعات : '..(Redis:scard(NASA..'ChekBotAdd') or 0)..'\n ᥫ᭡ عدد المشتركين : '..(Redis:scard(NASA..'Num:User:Pv') or 0)..'*',"md",true)  
+LuaTele.sendText(msg_chat_id,msg_id,'* ᥫ᭡ عدد احصائيات البوت الكامله \n   ᥫ᭡○︵‿︵‿𝑇??𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n ᥫ᭡ عدد المجموعات : '..(Redis:scard(NASA..'ChekBotAdd') or 0)..'\n ᥫ᭡ عدد المشتركين : '..(Redis:scard(NASA..'Num:User:Pv') or 0)..'*',"md",true)  
 end
 if text == '📩 › اضف كليشه المطور' then
 if not msg.ControllerBot then 
@@ -20284,7 +20286,7 @@ title = 'اضغط هنا لمعرفه كيفيه ارسال الهمسه',
 input_message_content = input_message_content,
 reply_markup = {
 inline_keyboard ={
-{{text ="˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡", url= "https://t.me/TGe_R"}},
+{{text ="˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍", url= "https://t.me/TGe_R"}},
 }
 },
 },
@@ -20501,7 +20503,7 @@ data = {
 {text = '0', data = IdUser..'calc&0'},{text = '.', data = IdUser..'calc&.'},{text = '+', data = IdUser..'calc&+'},{text = '=', data = IdUser..'equal'},
 },
 {
-{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎?? .⚡', url = 'https://t.me/TGe_R'},
+{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎?? .', url = 'https://t.me/TGe_R'},
 },
 }
 }
@@ -20632,7 +20634,7 @@ if Text == 'EndAddarray'..IdUser then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
-{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡',url="t.me/TGe_R"}},
+{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍',url="t.me/TGe_R"}},
 }
 }
 if Redis:get(NASA..'Set:array'..IdUser..':'..ChatId) == 'true1' then
@@ -20858,7 +20860,7 @@ local ph = photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id
 pph ={
 type = "photo",
 media = ph,
-caption = '*\n🎤› أهلآ بك عزيزي أنا بوت '..(Redis:get(NASA.."Name:Bot") or "تايجر")..'\n⚙️› وظيفتي حماية المجموعات\n✅› لتفعيل البوت عليك اتباع مايلي\n🔘› أضِف البوت إلى مجموعتك\n⚡️› ارفعهُ » مشرف\n⬆️› سيتم ترقيتك مالك في البوت \n*',
+caption = '*\n🎤› أهلآ بك عزيزي أنا بوت '..(Redis:get(NASA.."Name:Bot") or "تايجر")..'\n⚙️› وظيفتي حماية المجموعات\n✅› لتفعيل البوت عليك اتباع مايلي\n🔘› أضِف البوت إلى مجموعتك\n️› ارفعهُ » مشرف\n⬆️› سيتم ترقيتك مالك في البوت \n*',
 parse_mode = "Markdown"                                                                                                                                                               
 }     
 keyboard = {} 
@@ -22720,7 +22722,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡ ️', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 ️', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22743,7 +22745,7 @@ data = {
 {text = 'الغاء حظر', data = IdUser..'unban'..replyy}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡ ️', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 ️', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22762,7 +22764,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡ ️', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 ️', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22783,7 +22785,7 @@ data = {
 {text = 'الغاء تقييد', data = IdUser..'unkid'..replyy}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡ ️', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 ️', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22801,7 +22803,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡ ️', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 ️', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22818,7 +22820,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22837,7 +22839,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22863,7 +22865,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22922,7 +22924,7 @@ data = {
 {text = 'عوده', data = IdUser..'/chback'},
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡ ️', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 ️', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22943,7 +22945,7 @@ data = {
 {text = 'عوده', data = IdUser..'/chback'},
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡ ️', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 ️', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -22977,7 +22979,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '˹𝙎𝙤??𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .⚡', url = 't.me/TGe_R'}, 
+{text = '˹𝙎𝙤??𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -23052,7 +23054,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -23107,7 +23109,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/help6'},
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -23175,7 +23177,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎?? .⚡', url = 't.me/TGe_R'}, 
+{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎?? .', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -23247,7 +23249,7 @@ data = {
 {text = 'العاب متطورة 🥏', data = IdUser..'/degm'},{text = 'لعبه البنك 💸', data = IdUser..'/0988ban'}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -23287,7 +23289,7 @@ data = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}},
+{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}},
 {{text = 'القائمه الرئيسيه', data = IdUser..'/help6'}},
 }
 }
@@ -23307,7 +23309,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/help6'},
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -23357,7 +23359,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/help6'},
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -23403,7 +23405,7 @@ data = {
 {text = 'القفل🔐', data = IdUser..'/NoNextSeting'}, {text = 'التفعيل🛡️', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'}, 
+{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'}, 
 },
 }
 }
@@ -25423,84 +25425,84 @@ elseif Text and Text:match('(%d+)/Delkholat') then
 local UserId = Text:match('(%d+)/Delkholat')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."kholat:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع خولات المجموعة", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Delwtk') then
 local UserId = Text:match('(%d+)/Delwtk')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."wtka:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 .⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 .', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع وتكات المجموعة", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Deltwhd') then
 local UserId = Text:match('(%d+)/Deltwhd')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."twhd:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع متوحدين المجموعة", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Delklb') then
 local UserId = Text:match('(%d+)/Delklb')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."klb:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع الكلاب المجموعة", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Delmar') then
 local UserId = Text:match('(%d+)/Delmar')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."mar:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع حمير المجموعة", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Delsmb') then
 local UserId = Text:match('(%d+)/Delsmb')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."smb:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع السمب الي هنا ف المجموعة", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Del2rd') then
 local UserId = Text:match('(%d+)/Del2rd')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."2rd:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع القرود", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Del3ra') then
 local UserId = Text:match('(%d+)/Del3ra')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."3ra:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع العرر", 'md', false)
 end
 elseif Text and Text:match('(%d+)/alpe:Group') then
 local UserId = Text:match('(%d+)/alpe:Group')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."alpe:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع القلوب", 'md', false)
 end
 elseif Text and Text:match('(%d+)/bwoman:Group') then
 local UserId = Text:match('(%d+)/bwoman:Group')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."bwoman:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع بناتك", 'md', false)
 end
 elseif Text and Text:match('(%d+)/botaua:Group') then
 local UserId = Text:match('(%d+)/botaua:Group')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."botaua:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 .⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 .', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع ولادك", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Del8by') then
 local UserId = Text:match('(%d+)/Del8by')
 if tonumber(IdUser) == tonumber(UserId) then
 Redis:del(NASA.."8by:Group"..ChatId) 
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍⚡', url = 't.me/TGe_R'},},}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '˹˹َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀 ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍', url = 't.me/TGe_R'},},}}
 LuaTele.editMessageText(ChatId,Msg_id," ᥫ᭡ تم مسح جميع الأغبياء", 'md', false)
 end
 elseif Text and Text:match('(%d+)/SilentGroupGroup') then
