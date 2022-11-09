@@ -282,8 +282,8 @@ elseif tonumber(UserId) == 5634805056 then
 Status = 'مبرمج السورس'
 elseif tonumber(UserId) == 5552799584 then
 Status = 'مبرمج السورس'
-elseif tonumber(UserId) == 2178 then
-Status = 'no NEM'
+elseif tonumber(UserId) == 1715562844 then
+Status = 'الالماني'
 elseif tonumber(UserId) == 2112 then
 Status = 'نو نيم'
 elseif UserId == Sudo_Id then  
@@ -890,7 +890,7 @@ if tonumber(UserId) == 5589635882 then
 Status = true
 elseif tonumber(UserId) == 2112 then
 Status = true
-elseif tonumber(UserId) == 2178 then
+elseif tonumber(UserId) == 1715562844 then
 Status = true
 elseif tonumber(UserId) == 5634805056 then
 Status = true
@@ -940,7 +940,7 @@ if tonumber(UserId) == 5589635882 then
 Status = true
 elseif tonumber(UserId) == 5552799584 then
 Status = true
-elseif tonumber(UserId) == 2178 then
+elseif tonumber(UserId) == 1715562844 then
 Status = true
 elseif tonumber(UserId) == 5634805056 then
 Status = true
@@ -1134,8 +1134,8 @@ msg.The_Controller = 1
 elseif tonumber(msg.sender_id.user_id) == 5634805056 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 2178 then
-msg.Name_Controller = 'no NEM '
+elseif tonumber(msg.sender_id.user_id) == 1715562844 then
+msg.Name_Controller = 'الالماني '
 msg.The_Controller = 1
 elseif tonumber(msg.sender_id.user_id) == 5552799584 then
 msg.Name_Controller = 'مبرمج السورس '
@@ -7657,6 +7657,9 @@ end
 if UserId == "5634805056" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ᥫ᭡ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
+if UserId == "1715562844" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n* ᥫ᭡ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
+end
 if Redis:sismember(NASA.."BanAll:Groups",UserId) then
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId," ᥫ᭡ تم حظره عام من المجموعات مسبقا ").Reply,"md",true)  
 else
@@ -7710,6 +7713,9 @@ if UserId == "5552799584" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ᥫ᭡ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 if UserId == "5634805056" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n* ᥫ᭡ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
+end
+if UserId == "1715562844" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n* ᥫ᭡ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 local ban = LuaTele.getUser(UserId)
@@ -8537,6 +8543,91 @@ data = {
 LuaTele.sendText(5589635882,0,'*\n⤵️ مرحباً عزيزي المبرمج ميدو \nشخص ما يحتاج الي مساعده\n   ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
 
+if text == 'الالماني' or text == 'الماني' or text == 'احمد' then  
+local Get_Chat = LuaTele.getChat(msg_chat_id)
+local Info_Chats = LuaTele.getSupergroupFullInfo(msg_chat_id)
+local bains = LuaTele.getUser(msg.sender_id.user_id)
+if bains.first_name then
+klajq = '*['..bains.first_name..'](tg://user?id='..bains.id..')*'
+else
+klajq = 'لا يوجد'
+end
+if bains.username then
+basgk = '@'..bains.username..' '
+else
+basgk = 'لا يوجد'
+end
+local czczh = '*'..bains.first_name..'*'
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = czczh, url = "https://t.me/"..bains.username..""},
+},
+{
+{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
+},
+}
+}
+LuaTele.sendText(1715562844,0,'*\n⤵️ مرحباً عزيزي المبرمج الماني \nشخص ما يحتاج الي مساعده\n   ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+end
+if text == 'ادوكس' or text == 'يوسف' or text == 'Adoks' then  
+local Get_Chat = LuaTele.getChat(msg_chat_id)
+local Info_Chats = LuaTele.getSupergroupFullInfo(msg_chat_id)
+local bains = LuaTele.getUser(msg.sender_id.user_id)
+if bains.first_name then
+klajq = '*['..bains.first_name..'](tg://user?id='..bains.id..')*'
+else
+klajq = 'لا يوجد'
+end
+if bains.username then
+basgk = '@'..bains.username..' '
+else
+basgk = 'لا يوجد'
+end
+local czczh = '*'..bains.first_name..'*'
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = czczh, url = "https://t.me/"..bains.username..""},
+},
+{
+{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
+},
+}
+}
+LuaTele.sendText(5552799584,0,'*\n⤵️ مرحباً عزيزي المبرمج يوسف \nشخص ما يحتاج الي مساعده\n   ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+end
+
+if text == 'زوهري' or text == 'يوصف' or text == 'zohry' then  
+local Get_Chat = LuaTele.getChat(msg_chat_id)
+local Info_Chats = LuaTele.getSupergroupFullInfo(msg_chat_id)
+local bains = LuaTele.getUser(msg.sender_id.user_id)
+if bains.first_name then
+klajq = '*['..bains.first_name..'](tg://user?id='..bains.id..')*'
+else
+klajq = 'لا يوجد'
+end
+if bains.username then
+basgk = '@'..bains.username..' '
+else
+basgk = 'لا يوجد'
+end
+local czczh = '*'..bains.first_name..'*'
+local reply_markup = LuaTele.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = czczh, url = "https://t.me/"..bains.username..""},
+},
+{
+{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
+},
+}
+}
+LuaTele.sendText(5634805056,0,'*\n⤵️ مرحباً عزيزي المبرمج ميدو \nشخص ما يحتاج الي مساعده\n   ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵○ᥫ᭡\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+end
 
 if text == 'المساعد' or text == 'مساعد' then   
 local id = Redis:get(NASA.."id:HELPBEVQ:Groups")
@@ -17803,7 +17894,7 @@ name = string.gsub(name,"⛄️","☃☃☃☃☃☃⛄️☃☃☃☃")
 name = string.gsub(name,"👨‍🔬","👩‍🔬👩‍🔬👩‍ ᥫ᭡ ᥫ᭡‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬👩‍🔬")
 name = string.gsub(name,"👨‍💻","👩‍💻👩‍ ᥫ᭡👩‍‍💻👩‍‍ ᥫ᭡👩‍‍💻👨‍💻 ᥫ᭡‍💻👩‍💻👩‍💻")
 name = string.gsub(name,"👨‍🔧","👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👨‍🔧👩‍🔧")
-name = string.gsub(name,"👩‍🍳","👨‍🍳👨‍🍳👨‍🍳👨‍🍳👨‍🍳👩‍🍳👨‍🍳👨‍🍳👨‍🍳")
+name = string.gsub(name,"👩‍🍳","👨‍🍳👨‍🍳👨‍??👨‍🍳👨‍🍳👩‍🍳👨‍🍳👨‍🍳👨‍🍳")
 name = string.gsub(name,"🧚‍♀","🧚‍♂🧚‍♂🧚‍♂🧚‍♂🧚‍♀🧚‍♂🧚‍♂")
 name = string.gsub(name,"🧜‍♂","🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧚‍♂🧜‍♀🧜‍♀🧜‍♀")
 name = string.gsub(name," ᥫ᭡‍♂","🧝‍♀🧝‍♀🧝‍♀🧝‍♀🧝‍♀🧝‍♂🧝‍♀🧝‍♀🧝‍♀")
@@ -17996,7 +18087,7 @@ local List = {
  ᥫ᭡•𝐢𝐝  : #id 𖣬
 ]],
 [[
-- 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
+- 𓏬 𝐔??𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌??𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈?? : #id 𓂅 .
