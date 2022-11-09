@@ -3478,7 +3478,7 @@ klajq = '*['..ban.first_name..'](tg://user?id='..ban.id..')*'
 else
 klajq = 'لا يوجد'
 end
-local BAno = '* هل انت متأكد من تغيير المطور الاساسي ⏏️\n لي هذا الشخص ⤵️\n📇›ɴᴀᴍᴇ '..klajq..' \nℹ️›ᴜѕᴇ @'..ban.username..'\n🏷️›ɪᴅ '..UserId_Info.id..'*'
+local BAno = '* هل انت متأكد من تغيير المطور الاساسي\n لي هذا الشخص\n📇›ɴᴀᴍᴇ '..klajq..' \nℹ️›ᴜѕᴇ @'..ban.username..'\n🏷️›ɪᴅ '..UserId_Info.id..'*'
 local Informationlua = io.open("Information.lua", 'w')
 Informationlua:write([[
 return {
@@ -9438,111 +9438,7 @@ return  LuaTele.sendText(msg_chat_id,msg_id,'*ᥫ᭡ لا توجد صوره ف �
 end
 end
 end
-if text == "تفعيل شخصيه" or text == "تفعيل شخصيتي" then
-if not msg.Admin then
-send(msg_chat_id,msg_id,'\n* 𖥔 هذا الامر يخص  '..Controller_Num(7)..' * ',"md",true)  
-end
-Redis:del(NASA.."shakse"..msg_chat_id)
-send(msg_chat_id,msg_id,'\n* 𖥔 تم تفعيل امر شخصيتي * ',"md",true)  
-end
-if text == "تعطيل شخصيتي" or text == "تعطيل شخصيه" then
-if not msg.Admin then
-send(msg_chat_id,msg_id,'\n* 𖥔 هذا الامر يخص  '..Controller_Num(7)..' * ',"md",true)  
-end
-Redis:set(NASA.."shakse"..msg_chat_id,"off")
-send(msg_chat_id,msg_id,'\n* 𖥔 تم تعطيل امر شخصيتي * ',"md",true)  
-end
-if (text == 'شخصيتي' or text == 'حدد شخصيتي' or text == 'حددي شخصيتي') and not Redis:get(NASA.."shakse"..msg_chat_id) then
-local texting = {"عنيده", 
-"متردده  ",
-"خبيثة  ", 
-"ايجابية ", 
-"غامضة  ", 
-"ضعيفة ", 
-"كلاسيكية  ", 
-"مسالمة  ", 
-"حماسية ", 
-"قيادية  ", 
-"شكاك  ", 
-"رومنسية  ",
-"محفزة  ",
-"متعاونة  ",
-"اجتماعية  ",
-"عصبية ",
-"نرجسية  ",
-"انطوائية  ",
-"مظلومة  ",
-} 
-zezee = texting[math.random(#texting)]
-local Jabwa = bot.getUser(msg.sender_id.user_id)
-local photo = bot.getUserProfilePhotos(msg.sender_id.user_id)
-local news = '🥺♥️ شخصيتك -> '..zezee
-if photo.total_count > 0 then
-data = {} 
-data.inline_keyboard = {
-{
-{text =news,url = "https://t.me/"..Jabwa.username..""}, 
-},
-}
-local msgg = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&photo=".. URL.escape(news).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(data))
-end
-end
-if (text == 'مهنتي' or text == 'المهنه' or text == 'المهنة') and not Redis:get(NASA.."shakse"..msg_chat_id) then
-local texting = {"نقاش", 
-"دكتور  ",
-"دكتوره  ", 
-"طيار ", 
-"طياره  ", 
-"مدرس ", 
-"مدير  ", 
-"مديره  ", 
-"محاسب ", 
-"محسابه  ", 
-"نقاشه  ", 
-"مدير بنك  ",
-"مديرة بنك  ",
-"وزير  ",
-"وزيره  ",
-"ظابط ",
-"ظابطه  ",
-"شيخه  ",
-"شيخ  ",
-} 
-zezee = texting[math.random(#texting)]
-local Jabwa = bot.getUser(msg.sender_id.user_id)
-local TotalMsgT = Total_message(TotalMsg) 
-local age = "انسان"
-local Noun = "عايش بقالك زمان"
-local photo = bot.getUserProfilePhotos(msg.sender_id.user_id)
-local profession1 = '🎀 اسمك -> '..age
-local profession2 = '✨ سنك -> '..Noun
-local profession3 = '♥ مهنتك -> '..zezee
-local profession4 = '⛦ حالتك -> '..zezee
-local profession5 = '💖 تفاعلك -> '..TotalMsgT
-if photo.total_count > 0 then
-data = {} 
-data.inline_keyboard = {
-{
-{text =profession1,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession2,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession3,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession4,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession5,url = "https://t.me/"..Jabwa.username..""}, 
-},
-}
-local msgg = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&photo=".. URL.escape(profession1).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(data))
-end
-end
+
 if text == "نمله" then
 photo = 'https://t.me/apqiy/110'
 keyboard = {} 
@@ -16553,26 +16449,18 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 video = "https://t.me/TGe_R/692"
 local T =[[
-[•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍   ═━═━═━•](t.me/TGe_R)
- ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [🚨╎𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚝𝚒𝚐𝚎𝚛](t.me/TGe_R)
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [⚙╎𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝙴𝙶𝚈𝙿𝚃](t.me/TGe_R)
- ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-  [╎𝚁𝚄𝙽 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚄𝚂 𝙽𝙾𝚆](t.me/TGe_R)
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
- [◍ 𝚜𝚘𝚞𝚛𝚌𝚎 𝚝𝚒𝚐𝚎𝚛 ◍](t.me/TGe_R)
- ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-
-[⊶⊷᯽ 𝙏𝙞𝙂𝙚𝙍 ᯽⊶⊷](t.me/TGe_R)
-[•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍   ═━═━═━•](t.me/TGe_R)
+[•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
+ [𝑀𝐸𝐷𝑜](t.me/U_Y_3_M)   
+[𝑌𝑂𝑈𝑆𝑆𝐸𝑓](t.me/Z0HARY) 
+[𝐴𝐷𝑂𝐾𝑠](t.me/PTPPE)  
+[𝑆𝑂𝑈𝑅𝐶𝑒 𝑇𝐼𝐺𝐸𝑟](t.me/TGe_R)  
+[•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
  [ٓٓٓ⁨ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀](t.me/TGe_R)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '-جروب الدعم ➳', url = "https://t.me/U_Y_3_M_X"},{text = '-قناه السورس ', url = "https://t.me/TGe_R"} 
+{text = '-𝑆𝑂𝑈𝑅𝐶𝑒 𝑇𝐼𝐺𝐸𝑟  ', url = "https://t.me/TGe_R"} 
 },
 {
 {text = 'َِ𝙯َِ𝘰َِ𝙃َِ𝘳َِ𝘠🦇', url = "https://t.me/Z0HARY"},{text = 'َِ𝘢َِ𝘥َِ𝘰َِ𝘬َِ𝘴🧙‍♂️', url = "https://t.me/PTPPE"} 
@@ -16631,7 +16519,7 @@ data = {
 return LuaTele.sendText(msg_chat_id,msg_id, [[*
 ⏏️› اهلا بك في قسم الاوامر ..↑↓
 ⤵️› ختر الامر الذي تريدها .↑↓
- ↙️› ده من الازرار بلاسفل . ↓
+› ده من الازرار بلاسفل . ↓
  ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵ ○ᥫ᭡*]],"md",false, false, false, false, reply_markup)
 elseif text == 'الالعاب' then
 if not msg.Addictive then
@@ -17967,7 +17855,7 @@ Redis:del(NASA..'rolet:gast'..msg.chat_id)
 return LuaTele.sendText(msg_chat_id,msg_id,xxffxx,"md",false, false, false, false, reply_markup)
 end
 if text == 'حجره' or text == 'حجره ورقه' or text == 'حجر' then
-local xxffxx = '✴️ › اهلا بك في لعبه حجره ورقه مقص \n 💁 › اختر بين ⤵️\n (حجر - ورق - مقص ) '
+local xxffxx = '✴️ › اهلا بك في لعبه حجره ورقه مقص \n 💁 › اختر بين\n (حجر - ورق - مقص ) '
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
@@ -19938,7 +19826,7 @@ https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. ms
 end
 if text == '✴️ › نبذه عن السورس' then
 photo = "https://t.me/apqiy/249"
-local Name = "*  *[ ⚠️› مرحبا بك في نبذا عن السورس](t.me/TGe_R)*\n\n*[ ⏏️› السورس حمايه 100%](t.me/TGe_R) *\n\n*[ 🎵› اذا السورس بيه أغاني](t.me/TGe_R)*\n\n*[ 🎶› يوجد لدينا تنصيب بوتات أغاني](t.me/TGe_R)*\n\n*[👾› السورس مزود بلالعاب](t.me/TGe_R) *\n\n*[ 🔰› يوجد عمل سورس زي هي](t.me/TGe_R) *\n\n*[ 🌍› يوجد سيرفرات جميع الانواع](t.me/TGe_R) *\n\nاااضغط للتواصل 🔃›\n*"
+local Name = "*  *[ ⚠️› مرحبا بك في نبذا عن السورس](t.me/TGe_R)*\n\n*[› السورس حمايه 100%](t.me/TGe_R) *\n\n*[ 🎵› اذا السورس بيه أغاني](t.me/TGe_R)*\n\n*[ 🎶› يوجد لدينا تنصيب بوتات أغاني](t.me/TGe_R)*\n\n*[👾› السورس مزود بلالعاب](t.me/TGe_R) *\n\n*[ 🔰› يوجد عمل سورس زي هي](t.me/TGe_R) *\n\n*[ 🌍› يوجد سيرفرات جميع الانواع](t.me/TGe_R) *\n\nاااضغط للتواصل 🔃›\n*"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -19985,7 +19873,7 @@ data = {
 return LuaTele.sendText(msg_chat_id,msg_id, [[*
 ⏏️› اهلا بك في قسم الاوامر ..↑↓
 ⤵️› ختر الامر الذي تريدها .↑↓
- ↙️› ده من الازرار بلاسفل . ↓
+› ده من الازرار بلاسفل . ↓
  ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵ ○ᥫ᭡*]],"md",false, false, false, false, reply_markup)
 end
 if text == '🎮 › الالعاب' then
@@ -21295,7 +21183,7 @@ local ph = photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id
 pph ={
 type = "photo",
 media = ph,
-caption = '*  *[ ⚠️› مرحبا بك في نبذا عن السورس](t.me/TGe_R)*\n\n*[ ⏏️› السورس حمايه 100%](t.me/TGe_R) *\n\n*[ ??› اذا السورس بيه أغاني](t.me/TGe_R)*\n\n*[ 🎶› يوجد لدينا تنصيب بوتات أغاني](t.me/TGe_R)*\n\n*[👾› السورس مزود بلالعاب](t.me/TGe_R) *\n\n*[ 🔰› يوجد عمل سورس زي هي](t.me/TGe_R) *\n\n*[ 🌍› يوجد سيرفرات جميع الانواع](t.me/TGe_R) *\n\nاااضغط للتواصل 🔃›\n*',
+caption = '*  *[ ⚠️› مرحبا بك في نبذا عن السورس](t.me/TGe_R)*\n\n*[› السورس حمايه 100%](t.me/TGe_R) *\n\n*[ ??› اذا السورس بيه أغاني](t.me/TGe_R)*\n\n*[ 🎶› يوجد لدينا تنصيب بوتات أغاني](t.me/TGe_R)*\n\n*[👾› السورس مزود بلالعاب](t.me/TGe_R) *\n\n*[ 🔰› يوجد عمل سورس زي هي](t.me/TGe_R) *\n\n*[ 🌍› يوجد سيرفرات جميع الانواع](t.me/TGe_R) *\n\nاااضغط للتواصل 🔃›\n*',
 parse_mode = "Markdown"                                                                                                                                                               
 }     
 keyboard = {} 
@@ -22451,7 +22339,7 @@ local UserId = Text:match('(%d+)/N14')
 if tonumber(IdUser) == tonumber(UserId) then
 local DCBAN = Redis:get(NASA..ChatId..IdUser.."zkrf:text")
 DCBAN = DCBAN:gsub('A','a') DCBAN = DCBAN:gsub('S','s') DCBAN = DCBAN:gsub('D','d') DCBAN = DCBAN:gsub('F','f') DCBAN = DCBAN:gsub('G','g') DCBAN = DCBAN:gsub('H','h') DCBAN = DCBAN:gsub('J','j') DCBAN = DCBAN:gsub('K','k') DCBAN = DCBAN:gsub('L','l') DCBAN = DCBAN:gsub('Q','q') DCBAN = DCBAN:gsub('W','w') DCBAN = DCBAN:gsub('E','e' ) DCBAN = DCBAN:gsub('R','r' ) DCBAN = DCBAN:gsub('T','t' ) DCBAN = DCBAN:gsub('Y','y' ) DCBAN = DCBAN:gsub('U','u' ) DCBAN = DCBAN:gsub('I','i' ) DCBAN = DCBAN:gsub('O','o' ) DCBAN = DCBAN:gsub('P','p' ) DCBAN = DCBAN:gsub('Z','z' ) DCBAN = DCBAN:gsub('X','x' ) DCBAN = DCBAN:gsub('C','c' ) DCBAN = DCBAN:gsub('V','v' ) DCBAN = DCBAN:gsub('B','b' ) DCBAN = DCBAN:gsub('N','n' ) DCBAN = DCBAN:gsub('M','m')
-local Q_bna14 = DCBAN:gsub('a','𝙰' ) Q_bna14 = Q_bna14:gsub('b','𝙱' ) Q_bna14 = Q_bna14:gsub('c','𝙲' ) Q_bna14 = Q_bna14:gsub('d','𝙳' ) Q_bna14 = Q_bna14:gsub('e','𝙴' ) Q_bna14 = Q_bna14:gsub('f','𝙵' ) Q_bna14 = Q_bna14:gsub('g','𝙶' ) Q_bna14 = Q_bna14:gsub('h','𝙷' ) Q_bna14 = Q_bna14:gsub('i','𝙸' ) Q_bna14 = Q_bna14:gsub('j','𝙹' ) Q_bna14 = Q_bna14:gsub('k','𝙺' ) Q_bna14 = Q_bna14:gsub('l','𝙻' ) Q_bna14 = Q_bna14:gsub('m','𝙼' ) Q_bna14 = Q_bna14:gsub('n','𝙽' ) Q_bna14 = Q_bna14:gsub('o','𝙾' ) Q_bna14 = Q_bna14:gsub('p','𝙿' ) Q_bna14 = Q_bna14:gsub('q','𝚀' ) Q_bna14 = Q_bna14:gsub('r','𝚁' ) Q_bna14 = Q_bna14:gsub('s','𝚂' ) Q_bna14 = Q_bna14:gsub('t','𝚃' ) Q_bna14 = Q_bna14:gsub('u','𝙺' ) Q_bna14 = Q_bna14:gsub('v','𝚅' ) Q_bna14 = Q_bna14:gsub('w','𝚆' ) Q_bna14 = Q_bna14:gsub('x','𝚇' ) Q_bna14 = Q_bna14:gsub('y','𝚈' ) Q_bna14 = Q_bna14:gsub('z','𝚉')
+local Q_bna14 = DCBAN:gsub('a','𝙰' ) Q_bna14 = Q_bna14:gsub('b','𝙱' ) Q_bna14 = Q_bna14:gsub('c','𝙲' ) Q_bna14 = Q_bna14:gsub('d','𝙳' ) Q_bna14 = Q_bna14:gsub('e','𝙴' ) Q_bna14 = Q_bna14:gsub('f','𝙵' ) Q_bna14 = Q_bna14:gsub('g','𝙶' ) Q_bna14 = Q_bna14:gsub('h','𝙷' ) Q_bna14 = Q_bna14:gsub('i','𝙸' ) Q_bna14 = Q_bna14:gsub('j','𝙹' ) Q_bna14 = Q_bna14:gsub('k','𝙺' ) Q_bna14 = Q_bna14:gsub('l','𝙻' ) Q_bna14 = Q_bna14:gsub('m','??' ) Q_bna14 = Q_bna14:gsub('n','𝙽' ) Q_bna14 = Q_bna14:gsub('o','𝙾' ) Q_bna14 = Q_bna14:gsub('p','𝙿' ) Q_bna14 = Q_bna14:gsub('q','𝚀' ) Q_bna14 = Q_bna14:gsub('r','𝚁' ) Q_bna14 = Q_bna14:gsub('s','𝚂' ) Q_bna14 = Q_bna14:gsub('t','𝚃' ) Q_bna14 = Q_bna14:gsub('u','𝙺' ) Q_bna14 = Q_bna14:gsub('v','𝚅' ) Q_bna14 = Q_bna14:gsub('w','𝚆' ) Q_bna14 = Q_bna14:gsub('x','𝚇' ) Q_bna14 = Q_bna14:gsub('y','𝚈' ) Q_bna14 = Q_bna14:gsub('z','𝚉')
 LuaTele.editMessageText(ChatId, Msg_id, "ᥫ᭡ لـقـد اخـترت   \n▷ `"..Q_bna14.."`", "md",false)
 end
 end
@@ -23810,7 +23698,7 @@ data = {
 {text = 'الادمنيه⏺️', data = IdUser..'/help3'}, {text = 'الحمايه🔰', data = IdUser..'/help1'}, 
 },
 {
-{text = 'المطورين⚠️', data = IdUser..'/help5'}, {text = 'التسليه ⏏️', data = IdUser..'/help7'}, 
+{text = 'المطورين⚠️', data = IdUser..'/help5'}, {text = 'التسليه', data = IdUser..'/help7'}, 
 },
 {
 {text = 'القفل🔐', data = IdUser..'/NoNextSeting'}, {text = 'التفعيل🛡️', data = IdUser..'/listallAddorrem'}, 
