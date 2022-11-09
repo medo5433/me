@@ -8523,7 +8523,7 @@ data = {
 }
 LuaTele.sendText(5589635882,0,'*\n⤵️ مرحباً عزيزي المبرمج ميدو \nشخص ما يحتاج الي مساعده\n ᥫ᭡○︵‿︵‿𝑇𝐼𝐺𝐸𝑟‿︵‿︵ ○ᥫ᭡\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
-if text == 'يوسف' or text == 'ادوكس' then  
+ == 'ادوكس' then  
 local UserId_Info = LuaTele.searchPublicChat("PTPPE")
 if UserId_Info.id then
 local  ban = LuaTele.getUser(UserId_Info.id)
@@ -11514,7 +11514,7 @@ local ratpep = ballancee + 6700
 Redis:set(NASA.."flos"..msg.sender_id.user_id , math.floor(ratpep))
 local ballancee = Redis:get(NASA.."flos"..msg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballancee)
-LuaTele.sendText(msg.chat_id,msg.id,"اشعار ايداع "..neews.."\nالمبلغ : 6700 جنيه 💵\nوظيفتك : دكتور ولاده 👨\nنوع العملية : اضافة راتب\nرصيدك حاليا : "..convert_mony.." جنيه 💵","md",true)
+LuaTele.sendText(msg.chat_id,msg.id,"اشعار ايداع "..neews.."\nالمبلغ : 6700 جنيه ??\nوظيفتك : دكتور ولاده 👨\nنوع العملية : اضافة راتب\nرصيدك حاليا : "..convert_mony.." جنيه 💵","md",true)
 Redis:setex(NASA.."iiioo" .. msg.sender_id.user_id,600, true)
 elseif Descriptioont == "38" then
 local ratpep = ballancee + 6600
@@ -16460,8 +16460,8 @@ video = "https://t.me/TGe_R/692"
 local T =[[
 [•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
  [𝑀𝐸𝐷𝑜](t.me/U_Y_3_M)   
-[𝑌𝑂𝑈𝑆𝑆??𝑓](t.me/Z0HARY) 
-[𝐴𝐷𝑂𝐾𝑠](t.me/PTPPE)  
+[𝑌𝑂𝑈𝑆𝑆𝐸𝑓](t.me/Z0HARY) 
+[𝐴𝐷??𝐾𝑠](t.me/PTPPE)  
 [𝑆𝑂𝑈𝑅𝐶𝑒 𝑇𝐼𝐺𝐸𝑟](t.me/TGe_R)  
 [•━═━═━═━ٍٰٰ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍═━═━═━•](t.me/TGe_R)
  [ٓٓٓ⁨ٍ𝙏𝙄ٍ𝙂ٍ𝙀ٓ𝙍 َٰ𝙎ُِ𝙊ِّ𝙐ٓ𝙍ٍّ𝘾ٍ𝙀](t.me/TGe_R)
