@@ -9486,60 +9486,6 @@ keyboard.inline_keyboard = {
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg.chat_id.."&reply_to_message_id="..rep.."&photo="..photo.."&caption="..URL.escape(" إضغط علي خنزير 🐖").."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if (text == 'مهنتي' or text == 'المهنه' or text == 'المهنة') and not Redis:get(Fast.."shakse"..msg_chat_id) then
-local texting = {"نقاش", 
-"دكتور  ",
-"دكتوره  ", 
-"طيار ", 
-"طياره  ", 
-"مدرس ", 
-"مدير  ", 
-"مديره  ", 
-"محاسب ", 
-"محسابه  ", 
-"نقاشه  ", 
-"مدير بنك  ",
-"مديرة بنك  ",
-"وزير  ",
-"وزيره  ",
-"ظابط ",
-"ظابطه  ",
-"شيخه  ",
-"شيخ  ",
-} 
-zezee = texting[math.random(#texting)]
-local Jabwa = bot.getUser(msg.sender_id.user_id)
-local TotalMsgT = Total_message(TotalMsg) 
-local age = "انسان"
-local Noun = "عايش بقالك زمان"
-local photo = bot.getUserProfilePhotos(msg.sender_id.user_id)
-local profession1 = '🎀 اسمك -> '..age
-local profession2 = '✨ سنك -> '..Noun
-local profession3 = '♥ مهنتك -> '..zezee
-local profession4 = '⛦ حالتك -> '..zezee
-local profession5 = '💖 تفاعلك -> '..TotalMsgT
-if photo.total_count > 0 then
-data = {} 
-data.inline_keyboard = {
-{
-{text =profession1,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession2,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession3,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession4,url = "https://t.me/"..Jabwa.username..""}, 
-},
-{
-{text =profession5,url = "https://t.me/"..Jabwa.username..""}, 
-},
-}
-local msgg = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&photo=".. URL.escape(profession1).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(data))
-end
 if text == "صرصار" then
 photo = 'https://t.me/apqiy/59'
 keyboard = {} 
@@ -18484,7 +18430,7 @@ local List = {
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
-𓄼 ѕᴛᴀ : #stast ☥
+?? ѕᴛᴀ : #stast ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊
 𓄼 𝗖𝗛 - 『@TGe_R』 💞.
@@ -18922,7 +18868,7 @@ Msᴀɢ ~ #msgs
 𝟔𝟔𝟔 𖡋 #id • ??💞
 𝟔𝟔𝟔 𖡋 #game • 𖣰💞
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
-𝟔𝟔𝟔 𖡋 𝗖𝗛 - 『@TGe_R』  ᥫ᭡
+𝟔??𝟔 𖡋 𝗖𝗛 - 『@TGe_R』  ᥫ᭡
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
