@@ -284,8 +284,8 @@ elseif tonumber(UserId) == 5634805056 then
 Status = 'ا44'
 elseif tonumber(UserId) == 2178 then
 Status = 'no NEM'
-elseif tonumber(UserId) == 2112 then
-Status = 'نو نيم'
+elseif tonumber(UserId) == 5634805056 then
+Status = 'المبرمج زوهري'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == NASA then
@@ -888,7 +888,7 @@ Distinguished = Redis:sismember(NASA.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 5589635882 then
 Status = true
-elseif tonumber(UserId) == 2112 then
+elseif tonumber(UserId) == 5634805056 then
 Status = true
 elseif tonumber(UserId) == 2178 then
 Status = true
@@ -944,7 +944,7 @@ elseif tonumber(UserId) == 2178 then
 Status = true
 elseif tonumber(UserId) == 5552799584 then
 Status = true
-elseif tonumber(UserId) == 2112 then
+elseif tonumber(UserId) == 5634805056 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -1128,8 +1128,8 @@ end
 if tonumber(msg.sender_id.user_id) == 5589635882 then
 msg.Name_Controller = 'المبرمج ميدو '
 msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 2112 then
-msg.Name_Controller = 'نو نيم '
+elseif tonumber(msg.sender_id.user_id) == 5634805056 then
+msg.Name_Controller = 'المبرمج زوهري '
 msg.The_Controller = 1
 elseif tonumber(msg.sender_id.user_id) == 5552799584 then
 msg.Name_Controller = 'مبرمج السورس '
@@ -8478,7 +8478,7 @@ end
 end
 
 if text == 'يوسف' or text == 'ادوكس' then  
-local UserId_Info = LuaTele.searchPublicChat("G8AZAAL")
+local UserId_Info = LuaTele.searchPublicChat("PTPPE")
 if UserId_Info.id then
 local  ban = LuaTele.getUser(UserId_Info.id)
 local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -8712,7 +8712,7 @@ keyboard.inline_keyboard = {
 {{text = 'استوري اخري', callback_data = msg.sender_id.user_id..'/storyy'}}, 
 } 
 local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendvideo?chat_id=' .. msg_chat_id .. '&video=https://t.me/Qapplu/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..Token..'/sendvideo?chat_id=' .. msg_chat_id .. '&video=https://t.me/RSHDO5/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "عجله الحظ"  then 
 local Text ='اضغظ لائقاف العجله🎰' 
@@ -8732,7 +8732,7 @@ keyboard.inline_keyboard = {
 } 
 local msg_id = msg.id/2097152/0.5 
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg_chat_id .. '&photo=https://t.me/kbbnv/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+endا
 if text == "تويت بالصوره"  then 
 ban = math.random(1,40); 
 local Text ='لاختيار تويت اخري اتك ع زر بالاسفل' 
@@ -9011,7 +9011,97 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token.."/sendvideo?chat_id=" .. msg_chat_id .. "&video=https://t.me/apqiy/132&caption=".. URL.escape(baniusername).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+if text == "اشتمو" or text == "اشتم" or text == "نيكو" then 
+local vBandav_Msg = { 
+"  كسمك يبن الوسخه", 
+" كسمسكك ",
+" هنيكك",
+" اركب امك❤. ",
+" ي ابن الاحبه😁:]] ",
+" هنيك امك فله^^ ",
+" يعرص",
+" ي ابن الوتس",
+" ابوك خول😁:]]",
+" تيزك😁:]]",
+" لا حبيبي❤.",
+" خلاص كسمك😁:]]",
+" كس اختك🙂 ",
+" بز امك^^",
+"ناك ابوك عل وتس🥺⚡...!؟",
+"انيكك🤝🏻😂...!؟",
+" كسمك ي هقر🤾🏻‍♂️😂...!؟",
+" ابوك عرص🏃🏻‍♀️😂...!؟",
+" امك لبوه🏂😂...!؟",
+" بيب بيب هنيك امك عند بتاع الانبيب 😂🤭...!؟",
+" انت بتناك ليه 😂...!؟",
+" كسمك ي خول😂...!؟",
+" هديك زبي ??...!؟",
+" شششش مراتي🤭♥️...!؟",
+" كتفمك يخول🙂...!؟",
+" يبن الفيس😂...!؟",
+" ههينك ي ود مراتي😂...!؟ ",
+" بهزر معاك🙂...!؟",
+" خد زبي😉...!؟",
+" امك لبوه ياه🙂...!؟",
+" وه ي كسمك😂♥️...!؟",
+" ي ابن المتناكه🤝🏻😂...!؟",
+" تيزك فيها كام خرمه😂...!؟",
+" كسك🤾🏻‍♂️😂...!؟",
+" كسمك تاني😂😂...!؟ ",
+" هنيك امك😂...!؟",
+" كسمين امك😂...!؟ ",
+" كس اختك تاني😂🏂...!؟",
+" ي متناك😂⚡...!؟",
+" ي شرموط ",
+" ي مايح  ",
+" يبن الزانيه ",
+" ي كسمك  ",
+" ي منيوك ",
+" ي ابن المتناكة ",
+" يا لي امك احبهه ",
+" كسمينك",
+" كفياك كدا❤'✓",
 
+} 
+send(msg.chat_id_, msg.reply_to_message_id_,'['..vBandav_Msg[math.random(#vBandav_Msg)]..']')  
+return false 
+end
+if (text == 'شخصيتي' or text == 'حدد شخصيتي' or text == 'حددي شخصيتي') and not Redis:get(NASA.."shakse"..msg_chat_id) then
+local texting = {"عنيده", 
+"متردده  ",
+"خبيثة  ", 
+"ايجابية ", 
+"غامضة  ", 
+"ضعيفة ", 
+"كلاسيكية  ", 
+"مسالمة  ", 
+"حماسية ", 
+"قيادية  ", 
+"شكاك  ", 
+"رومنسية  ",
+"محفزة  ",
+"متعاونة  ",
+"اجتماعية  ",
+"عصبية ",
+"نرجسية  ",
+"انطوائية  ",
+"مظلومة  ",
+} 
+zezee = texting[math.random(#texting)]
+local Jabwa = bot.getUser(msg.sender_id.user_id)
+local photo = bot.getUserProfilePhotos(msg.sender_id.user_id)
+local news = '🥺♥️ شخصيتك -> '..zezee
+if photo.total_count > 0 then
+data = {} 
+data.inline_keyboard = {
+{
+{text =news,url = "https://t.me/"..Jabwa.username..""}, 
+},
+}
+local msgg = msg.id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo="..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id.."&photo=".. URL.escape(news).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(data))
+end
+end
 if text == "الوقت" then
 local date = os.date('*t')
 local time = os.date("*t")
@@ -9040,7 +9130,6 @@ return LuaTele.sendText(msg_chat_id,msg_id,banusername,"md",true)
 end
 
 if text == 'الجروب' or text == 'البار' or text == 'عدد الجروب' or text == 'عدد البار' then
-Info_Chats = bot.getSupergroupFullInfo(msg.chat_id)
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -17260,6 +17349,37 @@ local vBandav_Msg = {
 return LuaTele.sendText(msg_chat_id,msg_id,vBandav_Msg[math.random(#vBandav_Msg)],'md')
 end
 end
+if text == "اذكار" or text == "ذكر" then
+local texting = {"اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ , وَشُكْرِكَ , وَحُسْنِ عِبَادَتِكَ🎈💞", 
+"االلَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ , وَشُكْرِكَ , وَحُسْنِ عِبَادَتِكَ🎈💞 ",
+"اا6-قول -> سبحان الله وبحمده سبحان العظيم مئة مرة في اليوم قارئها غفرت له ذنوبه وأن كانت مثل زبد البحر .",
+"من الأدعية النبوية المأثورة:اللهمَّ زَيِّنا بزينة الإيمان",
+"اااللهم يا من رويت الأرض مطرا أمطر قلوبنا فرحا.🍂",
+"اا‏اللَّهُـمَّ لَڪَ الحَمْـدُ مِنْ قَـا؏ِ الفُـؤَادِ إلىٰ ؏َـرشِڪَ المُقـدَّس حَمْـدَاً يُوَافِي نِـ؏ـمَڪ 💙??",
+"﴿وَاذْكُرِ اسْمَ رَبِّكَ وَتَبَتَّلْ إِلَيْهِ تَبْتِيلًا﴾🌿✨",
+"﴿وَمَن يَتَّقِ اللهَ يُكَفِّرْ عَنْهُ سَيِّئَاتِهِ وَيُعْظِمْ لَهُ أَجْرًا﴾«",
+"«سُبْحَانَ اللهِ ، وَالحَمْدُ للهِ ، وَلَا إلَهَ إلَّا اللهُ ، وَاللهُ أكْبَرُ ، وَلَا حَوْلَ وَلَا قُوَّةَ إلَّا بِاللهِ»🍃",
+"وذُنُوبًا شوَّهتْ طُهْرَ قُلوبِنا؛ اغفِرها يا ربّ واعفُ عنَّا ❤️",
+"«اللَّهُمَّ آتِ نُفُوسَنَا تَقْوَاهَا ، وَزَكِّهَا أنْتَ خَيْرُ مَنْ زَكَّاهَا ، أنْتَ وَلِيُّهَا وَمَوْلَاهَا»🌹",
+"۝‏﷽إن اللَّه وملائكته يُصلُّون على النبي ياأيُّها الذين آمنوا صلُّوا عليه وسلِّموا تسليما۝",
+"فُسِبًحً بًحًمًدٍ ربًکْ وٌکْنِ مًنِ آلَسِآجّدٍيَنِ 🌿✨",
+"اأقُمً آلَصّلَآةّ لَدٍلَوٌکْ آلَشُمًسِ إلَيَ غُسِقُ آلَلَيَلَ🥀🌺",
+"نِسِتٌغُفُرکْ ربًيَ حًيَتٌ تٌلَهّيَنِآ آلَدٍنِيَآ عٌنِ ذِکْرکْ🥺😢",
+"وٌمًنِ أعٌرض عٌنِ ذِکْريَ فُإنِ لَهّ مًعٌيَشُةّ ضنِکْآ 😢",
+"وٌقُرأنِ آلَفُجّر إنِ قُرآنِ آلَفُجّر کْآنِ مًشُهّوٌدٍآ🎀🌲",
+"اأّذّأّ أّلَدِنِيِّأّ نِّستّګوِ أّصٌلَګوِ زِّوِروِ أّلَمَقِأّبِر💔",
+"حًتٌيَ لَوٌ لَمًتٌتٌقُنِ آلَخِفُظُ فُمًصّآحًبًتٌ لَلَقُرآنِ تٌجّعٌلَکْ مًنِ آهّلَ آلَلَهّ وٌخِآصّتٌهّ❤️🌱",
+"وٌإذِآ رضيَتٌ وٌصّبًرتٌ فُهّوٌ إرتٌقُآء وٌنِعٌمًةّ✨🌺",
+"«ربً آجّعٌلَنِيَ مًقُيَمً آلَصّلَآةّ وٌمًنِ ذِريَتٌيَ ربًنِآ وٌتٌقُبًلَ دٍعٌآء 🤲",
+"اآعٌلَمً آنِ رحًلَةّ صّبًرکْ لَهّآ نِهّآيَهّ عٌظُيَمًهّ مًحًمًلَهّ بًجّوٌآئزٍ ربًآنِيَهّ مًدٍهّشُهّ🌚☺️",
+"اإيَآکْ وٌدٍعٌوٌةّ آلَمًظُلَوٌمً فُ إنِهّآ تٌصّعٌدٍ آلَيَ آلَلَهّ کْأنِهّآ شُرآرهّ مًنِ نِآر 🔥🥺",
+"اآلَلَهّمً آنِقُذِ صّدٍوٌرنِآ مًنِ هّيَمًنِهّ آلَقُلَقُ وٌصّبً عٌلَيَهّآ فُيَضآ مًنِ آلَطِمًأنِيَنِهّ✨🌺",
+"يَآبًنِيَ إنِ صّلَآح آلَحًيَآةّ فُ أتٌجّآهّ آلَقُبًلَهّ 🥀🌿",
+"«آلَلَهّمً ردٍنِآ إلَيَکْ ردٍآ جّمًيَلَآ💔🥺",
+} 
+return send(msg_chat_id,msg_id,texting[math.random(#texting)],'md')
+end
+end
 if text == "انصحني" or text == "انصحنى" or text == "انصح" then 
 if Redis:get(NASA.."Status:Games"..msg.chat_id) then
 local vBandav_Msg = { 
@@ -18805,7 +18925,7 @@ Msᴀɢ ~ #msgs
 ▽ ›❀• 𝗖𝗛 - 『@TGe_R』 ⛧
 ]],
 [[
-• ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
+• ❉ ??𝑬𝑺 : #username ‌‌‏.
 • ❉ 𝑺𝑻𝑨 : #stast .
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
@@ -20759,7 +20879,7 @@ if tonumber(IdUser) == tonumber(UserId) then
 ban = math.random(3,74); 
 au ={
 type = "video",
-media = "https://t.me/Qapplu/"..ban.."",
+media = "https://t.me/RSHDO5/"..ban.."",
 caption = "لاختيار استوري اخري اتك ع زر بالاسفلل\n",
 parse_mode = "Markdown"                                                                                                                                                               
 }     
@@ -22119,7 +22239,7 @@ local UserId = Text:match('(%d+)/N13')
 if tonumber(IdUser) == tonumber(UserId) then
 local DCBAN = Redis:get(NASA..ChatId..IdUser.."zkrf:text")
 DCBAN = DCBAN:gsub('A','a') DCBAN = DCBAN:gsub('S','s') DCBAN = DCBAN:gsub('D','d') DCBAN = DCBAN:gsub('F','f') DCBAN = DCBAN:gsub('G','g') DCBAN = DCBAN:gsub('H','h') DCBAN = DCBAN:gsub('J','j') DCBAN = DCBAN:gsub('K','k') DCBAN = DCBAN:gsub('L','l') DCBAN = DCBAN:gsub('Q','q') DCBAN = DCBAN:gsub('W','w') DCBAN = DCBAN:gsub('E','e' ) DCBAN = DCBAN:gsub('R','r' ) DCBAN = DCBAN:gsub('T','t' ) DCBAN = DCBAN:gsub('Y','y' ) DCBAN = DCBAN:gsub('U','u' ) DCBAN = DCBAN:gsub('I','i' ) DCBAN = DCBAN:gsub('O','o' ) DCBAN = DCBAN:gsub('P','p' ) DCBAN = DCBAN:gsub('Z','z' ) DCBAN = DCBAN:gsub('X','x' ) DCBAN = DCBAN:gsub('C','c' ) DCBAN = DCBAN:gsub('V','v' ) DCBAN = DCBAN:gsub('B','b' ) DCBAN = DCBAN:gsub('N','n' ) DCBAN = DCBAN:gsub('M','m')
-local Q_bna13 = DCBAN:gsub('a','𝓪 ' ) Q_bna13 = Q_bna13:gsub('b','𝓫' ) Q_bna13 = Q_bna13:gsub('c','𝓬' ) Q_bna13 = Q_bna13:gsub('d','𝓭' ) Q_bna13 = Q_bna13:gsub('e','𝓮' ) Q_bna13 = Q_bna13:gsub('f','𝓯' ) Q_bna13 = Q_bna13:gsub('g','𝓰' ) Q_bna13 = Q_bna13:gsub('h','𝓱' ) Q_bna13 = Q_bna13:gsub('i','𝓲' ) Q_bna13 = Q_bna13:gsub('j','𝓳' ) Q_bna13 = Q_bna13:gsub('k','𝓴' ) Q_bna13 = Q_bna13:gsub('l','𝓵' ) Q_bna13 = Q_bna13:gsub('m','𝓶' ) Q_bna13 = Q_bna13:gsub('n','𝓷' ) Q_bna13 = Q_bna13:gsub('o','𝓸' ) Q_bna13 = Q_bna13:gsub('p','𝓹' ) Q_bna13 = Q_bna13:gsub('q','𝓺' ) Q_bna13 = Q_bna13:gsub('r','𝓻' ) Q_bna13 = Q_bna13:gsub('s','𝓼' ) Q_bna13 = Q_bna13:gsub('t','𝓽' ) Q_bna13 = Q_bna13:gsub('u','??' ) Q_bna13 = Q_bna13:gsub('v','𝓾' ) Q_bna13 = Q_bna13:gsub('w','𝔀' ) Q_bna13 = Q_bna13:gsub('x','𝔁' ) Q_bna13 = Q_bna13:gsub('y','𝔂' ) Q_bna13 = Q_bna13:gsub('z','𝔃')
+local Q_bna13 = DCBAN:gsub('a','𝓪 ' ) Q_bna13 = Q_bna13:gsub('b','𝓫' ) Q_bna13 = Q_bna13:gsub('c','𝓬' ) Q_bna13 = Q_bna13:gsub('d','𝓭' ) Q_bna13 = Q_bna13:gsub('e','𝓮' ) Q_bna13 = Q_bna13:gsub('f','𝓯' ) Q_bna13 = Q_bna13:gsub('g','𝓰' ) Q_bna13 = Q_bna13:gsub('h','𝓱' ) Q_bna13 = Q_bna13:gsub('i','𝓲' ) Q_bna13 = Q_bna13:gsub('j','𝓳' ) Q_bna13 = Q_bna13:gsub('k','𝓴' ) Q_bna13 = Q_bna13:gsub('l','𝓵' ) Q_bna13 = Q_bna13:gsub('m','𝓶' ) Q_bna13 = Q_bna13:gsub('n','𝓷' ) Q_bna13 = Q_bna13:gsub('o','𝓸' ) Q_bna13 = Q_bna13:gsub('p','𝓹' ) Q_bna13 = Q_bna13:gsub('q','𝓺' ) Q_bna13 = Q_bna13:gsub('r','𝓻' ) Q_bna13 = Q_bna13:gsub('s','𝓼' ) Q_bna13 = Q_bna13:gsub('t','𝓽' ) Q_bna13 = Q_bna13:gsub('u','𝓾' ) Q_bna13 = Q_bna13:gsub('v','𝓾' ) Q_bna13 = Q_bna13:gsub('w','𝔀' ) Q_bna13 = Q_bna13:gsub('x','𝔁' ) Q_bna13 = Q_bna13:gsub('y','𝔂' ) Q_bna13 = Q_bna13:gsub('z','𝔃')
 LuaTele.editMessageText(ChatId, Msg_id, "⛧ لـقـد اخـترت   \n▷ `"..Q_bna13.."`", "md",false)
 end
 end
