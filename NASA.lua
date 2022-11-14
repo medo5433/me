@@ -278,9 +278,9 @@ Distinguished = Redis:sismember(NASA.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 5589635882 then
 Status = 'المبرمج ميدو'
-elseif tonumber(UserId) == 5444 then
+elseif tonumber(UserId) == 5552799584 then
 Status = 'مبرمج السورس'
-elseif tonumber(UserId) == 1661 then
+elseif tonumber(UserId) == 5634805056 then
 Status = 'ا44'
 elseif tonumber(UserId) == 2178 then
 Status = 'no NEM'
@@ -892,9 +892,9 @@ elseif tonumber(UserId) == 2112 then
 Status = true
 elseif tonumber(UserId) == 2178 then
 Status = true
-elseif tonumber(UserId) == 5444 then
+elseif tonumber(UserId) == 5552799584 then
 Status = true
-elseif tonumber(UserId) == 1661 then
+elseif tonumber(UserId) == 5634805056 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -938,11 +938,11 @@ Distinguished = Redis:sismember(NASA.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if tonumber(UserId) == 5589635882 then
 Status = true
-elseif tonumber(UserId) == 1661 then
+elseif tonumber(UserId) == 5634805056 then
 Status = true
 elseif tonumber(UserId) == 2178 then
 Status = true
-elseif tonumber(UserId) == 5444 then
+elseif tonumber(UserId) == 5552799584 then
 Status = true
 elseif tonumber(UserId) == 2112 then
 Status = true
@@ -1131,13 +1131,13 @@ msg.The_Controller = 1
 elseif tonumber(msg.sender_id.user_id) == 2112 then
 msg.Name_Controller = 'نو نيم '
 msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 5444 then
+elseif tonumber(msg.sender_id.user_id) == 5552799584 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif tonumber(msg.sender_id.user_id) == 2178 then
 msg.Name_Controller = 'no NEM '
 msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 1661 then
+elseif tonumber(msg.sender_id.user_id) == 5634805056 then
 msg.Name_Controller = 'vcvv '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender_id.user_id) == true then  
@@ -7638,10 +7638,10 @@ end
 if tonumber(userid) == tonumber(NASA) then  
 return LuaTele.sendText(msg_chat_id,msg_id,"\n⛧ عذرآ لا تستطيع استخدام الامر على البوت ","md",true)  
 end
-if UserId == "1661" then
+if UserId == "5634805056" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⛧ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
-if UserId == "5444" then
+if UserId == "5552799584" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⛧ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 if Redis:sismember(NASA.."BanAll:Groups",UserId) then
@@ -7693,10 +7693,10 @@ end
 if UserId == "5589635882" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⛧ عذرآ لا تستطيع استخدام الامر على المطور ميدو *","md",true)  
 end
-if UserId == "1661" then
+if UserId == "5634805056" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⛧ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
-if UserId == "5444" then
+if UserId == "5552799584" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⛧ عذرآ لا تستطيع استخدام الامر على مبرمج السورس *","md",true)  
 end
 local ban = LuaTele.getUser(UserId)
@@ -8437,6 +8437,88 @@ end
 end
 end
 
+if text == 'المبرمج يوصف' or text == 'يوصف' then  
+local UserId_Info = LuaTele.searchPublicChat("Z0HARY")
+if UserId_Info.id then
+local  ban = LuaTele.getUser(UserId_Info.id)
+local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
+if  bain.bio then
+Bio =  bain.bio
+else
+Bio = 'لا يوجد'
+end
+if ban.first_name then
+Creat = " "..ban.first_name.." "
+else
+Creat = " Developers Bot \n"
+end
+local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local TestText = "  ❲ َِ𝙯َِ𝘰َِ𝙃َِ𝘳َِ𝘠🦇 ,❳\nᥫ᭡\n 🦇 *ժᥱ᥎ ꪀᥲ️ꪔᥱ* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n🦇  *ժᥱ᥎ ႦᎥ᥆* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "- معلومات المطور: \\nn: name Dev . [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
+
+if text == 'يوسف' or text == 'ادوكس' then  
+local UserId_Info = LuaTele.searchPublicChat("G8AZAAL")
+if UserId_Info.id then
+local  ban = LuaTele.getUser(UserId_Info.id)
+local  bain = LuaTele.getUserFullInfo(UserId_Info.id)
+if  bain.bio then
+Bio =  bain.bio
+else
+Bio = 'لا يوجد'
+end
+if ban.first_name then
+Creat = " "..ban.first_name.." "
+else
+Creat = " Developers Bot \n"
+end
+local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
+if photo.total_count > 0 then
+local TestText = "  ❲ َِ𝘴𝘰𝘶𝘳𝙘𝘦 𝙏ِ𝘪𝘎𝘦𝘳 ,❳\nᥫ᭡\n 🦇 *ժᥱ᥎ ꪀᥲ️ꪔᥱ* :  [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n🦇  *ժᥱ᥎ ႦᎥ᥆* : [❲ "..Bio.." ❳]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = 'ِ𝘢َِ𝘥َِ𝘰َِ𝘬َِ𝘴🧙‍♂️↺★  .', url = 't.me/PTPPE'}, 
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+else
+local TestText = "- معلومات المطور: \\nn: name Dev . [".. ban.first_name.."](tg://user?id="..UserId_Info.id..")\n\n ["..Bio.."]"
+keyboardd = {} 
+keyboardd.inline_keyboard = {
+{
+{text = 'ِ𝘢َِ𝘥َِ𝘰َِ𝘬َِ𝘴🧙‍♂️↺★  .', url = 't.me/PTPPE'}, 
+},
+{
+{text = Creat, url = "https://t.me/"..ban.username..""},
+},
+}
+local msg_id = msg.id/2097152/0.5 
+ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. msg.chat_id .. '&text=' .. URL.escape(TestText).."&reply_to_message_id="..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
+end
+end
+end
 
 if text == (Redis:get(NASA.."Name:bev") or "مطور") then
 local Get_Chat = LuaTele.getChat(msg_chat_id)
@@ -8958,7 +9040,6 @@ return LuaTele.sendText(msg_chat_id,msg_id,banusername,"md",true)
 end
 
 if text == 'الجروب' or text == 'البار' or text == 'عدد الجروب' or text == 'عدد البار' then
-Get_Chat = bot.getChat(msg.chat_id)
 Info_Chats = bot.getSupergroupFullInfo(msg.chat_id)
 local reply_markup = bot.replyMarkup{
 type = 'inline',
@@ -22038,7 +22119,7 @@ local UserId = Text:match('(%d+)/N13')
 if tonumber(IdUser) == tonumber(UserId) then
 local DCBAN = Redis:get(NASA..ChatId..IdUser.."zkrf:text")
 DCBAN = DCBAN:gsub('A','a') DCBAN = DCBAN:gsub('S','s') DCBAN = DCBAN:gsub('D','d') DCBAN = DCBAN:gsub('F','f') DCBAN = DCBAN:gsub('G','g') DCBAN = DCBAN:gsub('H','h') DCBAN = DCBAN:gsub('J','j') DCBAN = DCBAN:gsub('K','k') DCBAN = DCBAN:gsub('L','l') DCBAN = DCBAN:gsub('Q','q') DCBAN = DCBAN:gsub('W','w') DCBAN = DCBAN:gsub('E','e' ) DCBAN = DCBAN:gsub('R','r' ) DCBAN = DCBAN:gsub('T','t' ) DCBAN = DCBAN:gsub('Y','y' ) DCBAN = DCBAN:gsub('U','u' ) DCBAN = DCBAN:gsub('I','i' ) DCBAN = DCBAN:gsub('O','o' ) DCBAN = DCBAN:gsub('P','p' ) DCBAN = DCBAN:gsub('Z','z' ) DCBAN = DCBAN:gsub('X','x' ) DCBAN = DCBAN:gsub('C','c' ) DCBAN = DCBAN:gsub('V','v' ) DCBAN = DCBAN:gsub('B','b' ) DCBAN = DCBAN:gsub('N','n' ) DCBAN = DCBAN:gsub('M','m')
-local Q_bna13 = DCBAN:gsub('a','𝓪 ' ) Q_bna13 = Q_bna13:gsub('b','𝓫' ) Q_bna13 = Q_bna13:gsub('c','𝓬' ) Q_bna13 = Q_bna13:gsub('d','𝓭' ) Q_bna13 = Q_bna13:gsub('e','𝓮' ) Q_bna13 = Q_bna13:gsub('f','𝓯' ) Q_bna13 = Q_bna13:gsub('g','𝓰' ) Q_bna13 = Q_bna13:gsub('h','𝓱' ) Q_bna13 = Q_bna13:gsub('i','𝓲' ) Q_bna13 = Q_bna13:gsub('j','𝓳' ) Q_bna13 = Q_bna13:gsub('k','𝓴' ) Q_bna13 = Q_bna13:gsub('l','𝓵' ) Q_bna13 = Q_bna13:gsub('m','𝓶' ) Q_bna13 = Q_bna13:gsub('n','𝓷' ) Q_bna13 = Q_bna13:gsub('o','𝓸' ) Q_bna13 = Q_bna13:gsub('p','𝓹' ) Q_bna13 = Q_bna13:gsub('q','𝓺' ) Q_bna13 = Q_bna13:gsub('r','𝓻' ) Q_bna13 = Q_bna13:gsub('s','𝓼' ) Q_bna13 = Q_bna13:gsub('t','𝓽' ) Q_bna13 = Q_bna13:gsub('u','𝓾' ) Q_bna13 = Q_bna13:gsub('v','𝓾' ) Q_bna13 = Q_bna13:gsub('w','𝔀' ) Q_bna13 = Q_bna13:gsub('x','𝔁' ) Q_bna13 = Q_bna13:gsub('y','𝔂' ) Q_bna13 = Q_bna13:gsub('z','𝔃')
+local Q_bna13 = DCBAN:gsub('a','𝓪 ' ) Q_bna13 = Q_bna13:gsub('b','𝓫' ) Q_bna13 = Q_bna13:gsub('c','𝓬' ) Q_bna13 = Q_bna13:gsub('d','𝓭' ) Q_bna13 = Q_bna13:gsub('e','𝓮' ) Q_bna13 = Q_bna13:gsub('f','𝓯' ) Q_bna13 = Q_bna13:gsub('g','𝓰' ) Q_bna13 = Q_bna13:gsub('h','𝓱' ) Q_bna13 = Q_bna13:gsub('i','𝓲' ) Q_bna13 = Q_bna13:gsub('j','𝓳' ) Q_bna13 = Q_bna13:gsub('k','𝓴' ) Q_bna13 = Q_bna13:gsub('l','𝓵' ) Q_bna13 = Q_bna13:gsub('m','𝓶' ) Q_bna13 = Q_bna13:gsub('n','𝓷' ) Q_bna13 = Q_bna13:gsub('o','𝓸' ) Q_bna13 = Q_bna13:gsub('p','𝓹' ) Q_bna13 = Q_bna13:gsub('q','𝓺' ) Q_bna13 = Q_bna13:gsub('r','𝓻' ) Q_bna13 = Q_bna13:gsub('s','𝓼' ) Q_bna13 = Q_bna13:gsub('t','𝓽' ) Q_bna13 = Q_bna13:gsub('u','??' ) Q_bna13 = Q_bna13:gsub('v','𝓾' ) Q_bna13 = Q_bna13:gsub('w','𝔀' ) Q_bna13 = Q_bna13:gsub('x','𝔁' ) Q_bna13 = Q_bna13:gsub('y','𝔂' ) Q_bna13 = Q_bna13:gsub('z','𝔃')
 LuaTele.editMessageText(ChatId, Msg_id, "⛧ لـقـد اخـترت   \n▷ `"..Q_bna13.."`", "md",false)
 end
 end
